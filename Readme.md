@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алина Кривенцева](https://up.htmlacademy.ru/adaptive/11/user/285159).
-* Наставник: `Неизвестно`.
+* Наставник: Сергей Рубец.
 
 ---
 
