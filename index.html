@@ -5,8 +5,36 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="http://placehold.it/150x100" width="80" height="35" alt="Mishka" >
+      </a>
+      <nav class="main-navigation main-navigation--closed">
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <a class="main-navigaiton__item" href="#">Каталог товаров</a>
+        <a class="main-navigaiton__item" href="#">Вязание на заказ</a>
+      </nav>
+      <div class="user-block">
+        <form class="search-field" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="search-field__label" for="search">Поиск</label>
+          <input class="search-field__input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+          <button class="search-field__button" type="submit" value="Поиск">Поиск</button>
+        </form>   
+        <div class="shopping-cart">
+          <a class="shopping-cart" href="#">Корзина: <span class="shopping-cart__indicator">пока пуста</span></a>       
+        </div>  
+      </div>
+    </header>
+    <main>
+      <section class="catalog">
+        <h2 class="catalog-title">Милые штуки ручной работы для дома</h2>
+        <div class="catalog-list">
+          <a class="catalog-item" href="">Предметы интерьера</a>
+          <a class="catalog-item catalog-item--bg-color" href="">Детские игрушки</a>
+        </div>
+      </section>  
+    </main>
+    
 
   </body>
 </html>
