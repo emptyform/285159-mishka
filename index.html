@@ -6,13 +6,13 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" title="Mishka" tabindex="0">
         <img src="http://placehold.it/150x100" width="80" height="35" alt="Mishka" >
       </a>
+      <button class="page-header__toggle" type="button">Открыть меню</button>
       <nav class="main-navigation main-navigation--closed">
-        <button class="page-header__toggle" type="button">Открыть меню</button>
-        <a class="main-navigaiton__item" href="#">Каталог товаров</a>
-        <a class="main-navigaiton__item" href="#">Вязание на заказ</a>
+        <a class="main-navigaiton__item" href="#" title="Каталог товаров" tabindex="0">Каталог товаров</a>
+        <a class="main-navigaiton__item" href="#" title="Вязание на заказ" tabindex="0">Вязание на заказ</a>
       </nav>
       <div class="user-block">
         <form class="search-field" action="https://echo.htmlacademy.ru/" method="post">
@@ -21,20 +21,98 @@
           <button class="search-field__button" type="submit" value="Поиск">Поиск</button>
         </form>   
         <div class="shopping-cart">
-          <a class="shopping-cart" href="#">Корзина: <span class="shopping-cart__indicator">пока пуста</span></a>       
+          <a class="shopping-cart__link" href="#" title="Корзина" tabindex="0">Корзина: <span class="shopping-cart__indicator">пока пуста</span></a>
         </div>  
       </div>
     </header>
+    
     <main>
       <section class="catalog">
-        <h2 class="catalog-title">Милые штуки ручной работы для дома</h2>
-        <div class="catalog-list">
-          <a class="catalog-item" href="">Предметы интерьера</a>
-          <a class="catalog-item catalog-item--bg-color" href="">Детские игрушки</a>
+        <header class="catalog__header"> 
+          <h2 class="catalog__title">Милые штуки ручной работы для дома</h2>
+        </header>  
+        <div class="catalog__items">
+          <a class="catalog__item catalog__item--interior" href="" title="Предметы интерьера" tabindex="0">Предметы интерьера</a>
+          <a class="catalog__item catalog__item--toys" href="" title="Детские игрушки" tabindex="0">Детские игрушки</a>
         </div>
-      </section>  
+      </section> 
+      <section class="special-offer">
+        <header class="special-offer__header">
+          <h2 class="special-offer__title">Вязаные корзинки</h2>
+          <b class="special-offer__detail">Товар недели</b>
+        </header>
+        <div class="special-offer__contetns">
+          <p class="special-offer__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="special-offer__specification">
+            <tr class="special-offer__feature">
+              <td class="special-offer__parameter">Цвет:</td>
+              <td class="special-offer__value">&laquo;Тиффани&raquo;/серый</td>
+            </tr>
+            <tr class="special-offer__feature">
+              <td class="special-offer__parameter">Диаметр:</td>
+              <td class="special-offer__value">25 см</td>
+            </tr>
+            <tr class="special-offer__feature">
+              <td class="special-offer__parameter">Высота:</td>
+              <td class="special-offer__value">15 см</td>
+            </tr>
+          </table>
+          <figure class="special-offer__img">
+            <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки.Товар недели">
+          </figure>
+          <b class="special-offer__price">Цена: 990 руб.</b>
+          <button class="button" type="button">Заказать</button>   
+        </div>      
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title">Коротко о нас:</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item  advantages-item--">Экологически чистые материалы</li>
+          <li class="advantages__item  advantages-item--">Скандинавский стиль по российской цене</li>
+          <li class="advantages__item  advantages-item--">Увеличивает лайки на фотографиях</li>  
+          <li class="advantages__item  advantages-item--">Связано вручную с любовью и умилением</li>
+          <li class="advantages__item  advantages-item--">Поддержка отечественного производителя</li>
+          <li class="advantages__item  advantages-item--">Поставляется в подарочной упаковке</li>
+        </ul>     
+      </section> 
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</div>
+        <b class="reviews__author">Анастасия Красильникова</b>
+        <span class="reviews__author-email">@misssssiskras</span>
+        <div class="reviews__pages">
+          <a class="reviews__pages-item reviews__pages-item--prev" href="#" title="Назад" tabindex="0">Назад</a>
+          <a class="reviews__pages-item reviews__pages-item--next" href="#" title="Вперед" tabindex="0">Вперед</a>
+        </div> 
+        <a class="button button--reviews" href="form.html" title="Написать" tabindex="0">Написать</a>         
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts__information">
+          <tr class="contacts__date">
+            <td class="contacts__parametr">e-mail:</td>
+            <td class="contacts__value">info@mimimishkashop.ru</td>
+          </tr>
+          <tr class="contacts__date">
+            <td class="contacts__parametr">адрес:</td>
+            <td class="contacts__value">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</td>
+          </tr>
+        </table>
+        <div class=map></div>
+        <a class="button button--feedback" href="#" title="Напишите нам" tabindex="0">Напишите нам</a>
+      </section>
     </main>
-    
-
+    <footer class="page-footer">
+      <section class="page-footer__socials">
+        <h2 class="socials__title">Мы в социальных сетях</h2>
+        <a class="" href="" title="Instagram" tabindex="0">Instagram</a>
+        <a class="" href="" title="Facebook" tabindex="0">Facebook</a>
+        <a class="" href="" title="Twitter" tabindex="0">Twitter</a>
+      </section>
+      <section class="page-footer__copyright">
+        <h2 calsss="page-footer__copyright-title">Разработано</h2>
+        <a class="page-footer__copyright-link" href="htmlacademy.ru" title="HTMLAcademy" tabindex="0">HTMLAcademy</a>
+      </section>
+    </footer>
   </body>
 </html>
