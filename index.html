@@ -3,46 +3,62 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <h1 class="page-header__title">Mishka - инетренет магазин милых штучек ручной работы</h1>
-        <a class="page-header__logo" title="Mishka" tabindex="0">
-          <img src="http://placehold.it/150x100" width="80" height="35" alt="Mishka" >
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <div class="main-nav__list">
-              <a class="main-nav__item" href="catalog.html" title="Каталог товаров" tabindex="0">Каталог товаров</a>
-              <a class="main-nav__item" href="form.html" title="Вязание на заказ" tabindex="0">Вязание на заказ</a>
-            </div>
-            <div class="main-nav__user">
-              <form class="search-field" action="https://echo.htmlacademy.ru/" method="post">
+      <h1 class="page-header__title">Mishka - инетренет магазин милых штучек ручной работы</h1>
+      <div class="page-header__wrapper"> 
+        <div class="page-header__inner">
+          <a class="page-header__logo" title="Mishka" tabindex="0">
+            <img src="img/logo-mobile.svg" width="86" height="36" alt="Mishka" >
+          </a>
+          <button class="page-header__toggle" type="button">Открыть меню</button>
+        </div>  
+      </div>  
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"> 
+              <a class="main-nav__item-link" href="catalog.html" title="Каталог товаров" tabindex="0">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">  
+              <a class="main-nav__item-link" href="form.html" title="Вязание на заказ" tabindex="0">Вязание на заказ</a>
+            </li>
+          </ul>
+          <div class="main-nav__user">
+            <form class="search-field" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="search-field__inner">
                 <label class="search-field__label" for="search">Поиск</label>
                 <input class="search-field__input" type="search" name="search" id="search" placeholder="Поиск по сайту">
                 <button class="search-field__button" type="submit" value="Поиск">Поиск</button>
-              </form>
-              <div class="shopping-cart">
+              </div>
+            </form>
+            <div class="shopping-cart">
+              <div class="shopping-cart__inner">
                 <a class="shopping-cart__link" href="#" title="Корзина" tabindex="0">Корзина
                   <span class="shopping-cart__indicator">пока пуста</span>
                 </a>
-              </div>
+              </div>  
             </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>     
     </header>
 
-    <main>
+    <main class="page-main">
       <section class="goods">
         <header class="goods__header">
           <h2 class="goods__title">Милые штуки ручной работы для дома</h2>
         </header>
         <div class="goods__list">
-          <a class="goods__item goods__item--interior" href="" title="Предметы интерьера" tabindex="0">Предметы интерьера</a>
-          <a class="goods__item goods__item--toys" href="" title="Детские игрушки" tabindex="0">Детские игрушки</a>
+          <a class="goods__item goods__item--interior" href="" title="Предметы интерьера" tabindex="0">
+            <span class="goods__item-name">Предметы интерьера</span>
+          </a>
+          <a class="goods__item goods__item--toys" href="" title="Детские игрушки" tabindex="0">
+            <span class="goods__item-name">Детские игрушки</span>
+          </a>
         </div>
       </section>
 
@@ -68,23 +84,25 @@
             </tr>
           </table>
           <figure class="special-offer__img">
-            <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки.Товар недели">
+            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки.Товар недели">
           </figure>
           <b class="special-offer__price">Цена: 990 руб.</b>
-          <button class="button" type="button">Заказать</button>
+          <button class="button button--order" type="button">Заказать</button>
         </div>
       </section>
 
       <section class="advantages">
-        <h2 class="advantages__title">Коротко о нас:</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item  advantages-item--quality">Экологически чистые материалы</li>
-          <li class="advantages__item  advantages-item--price">Скандинавский стиль по российской цене</li>
-          <li class="advantages__item  advantages-item--feature">Увеличивает лайки на фотографиях</li>
-          <li class="advantages__item  advantages-item--handmade">Связано вручную с любовью и умилением</li>
-          <li class="advantages__item  advantages-item--produced">Поддержка отечественного производителя</li>
-          <li class="advantages__item  advantages-item--package">Поставляется в подарочной упаковке</li>
-        </ul>
+        <div class="advantages-wrapper">
+          <h2 class="advantages__title">Коротко о нас:</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item  advantages-item--quality">Экологически чистые материалы</li>
+            <li class="advantages__item  advantages-item--price">Скандинавский стиль по российской цене</li>
+            <li class="advantages__item  advantages-item--feature">Увеличивает лайки на фотографиях</li>
+            <li class="advantages__item  advantages-item--handmade">Связано вручную с любовью и умилением</li>
+            <li class="advantages__item  advantages-item--produced">Поддержка отечественного производителя</li>
+            <li class="advantages__item  advantages-item--package">Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>  
       </section>
 
       <section class="reviews">
@@ -110,18 +128,18 @@
           <h2 class="contacts__title">Контакты</h2>
           <table class="contacts__information">
             <tr class="contacts__date">
-              <td class="contacts__parametr">e-mail:</td>
-              <td class="contacts__value">
+              <td class="contacts__parameter">e-mail:</td>
+              <td class="contacts__value  contacts__value--email">
                 <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
               </td>
             </tr>
             <tr class="contacts__date">
-              <td class="contacts__parametr">адрес:</td>
+              <td class="contacts__parameter">адрес:</td>
               <td class="contacts__value">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</td>
             </tr>
           </table>
         </div>
-        <div class=map></div>
+        <div class="map"></div>
         <div class="contacts__wrapper">
           <a class="button button--feedback" href="#" title="Напишите нам" tabindex="0">Напишите нам</a>
         </div>
@@ -142,19 +160,25 @@
         </section>
       </div>
     </footer>
-
+    
     <div class="modal">
       <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
       <b class="modal__choice-size">Выберите размер:</b>
       <form class="modal__size-list" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="modal__size-input" type="radio" name="size" value="S" id="size-S" checked>
-        <label class="modal__size-label" for="size-S">S</label>
-        <input class="modal__size-input" type="radio" name="size" value="M" id="size-M">
-        <label class="modal__size-label" for="size-S">M</label>
-        <input class="modal__size-input" type="radio" name="size" value="L" id="size-L">
-        <label class="modal__size-label" for="size-S">L</label>
+        <div class="modal__size-list-wrapper">
+          <input class="modal__size-input" type="radio" name="size" value="S" id="size-S" checked>
+          <label class="modal__size-label" for="size-S" tabindex="0">S</label>
+          <input class="modal__size-input" type="radio" name="size" value="M" id="size-M">
+          <label class="modal__size-label" for="size-S" tabindex="0">M</label>
+          <input class="modal__size-input" type="radio" name="size" value="L" id="size-L">
+          <label class="modal__size-label" for="size-S" tabindex="0">L</label>
+        </div>  
         <button class="button  button--submit" type="submit">Добавить</button>
       </form>
     </div>
+    
+    <div class="modal-overlay"></div>
+    
+    <script src="js/open-windows.js"></script>
   </body>
 </html>

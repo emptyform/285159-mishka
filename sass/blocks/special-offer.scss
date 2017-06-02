@@ -1,0 +1,78 @@
+.special-offer {
+  padding-bottom: 42px;
+  margin-bottom: 35px;
+  background-color: $bg-color;
+  color: $text-color;
+  background-image: url("../img/zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+.special-offer__header {
+  padding: 0 30px;
+}
+.special-offer__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $text-color;
+  background-color: $bg-color;
+}
+.special-offer__detail {
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $color-second;
+}
+.special-offer__contetns {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.special-offer__description {
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $text-color;
+}
+.special-offer__specification {
+  width: 100%;
+  margin-bottom: 28px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.special-offer__parameters {
+  border-bottom: 1px solid #ececec;
+}
+.special-offer__parameter {
+  padding-top: 15px;
+  padding-bottom: 12px;
+  padding-right: 0px;
+  text-align: left;
+}
+.special-offer__value {
+  padding-top: 15px;
+  padding-bottom: 12px;
+}
+.special-offer__img {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.special-offer__img img {
+  display: block;
+  max-width: 100%;
+}
+.special-offer__price {
+  align-self: center;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #444444;
+}

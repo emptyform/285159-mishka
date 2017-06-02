@@ -1,0 +1,29 @@
+.shopping-cart {
+  border-bottom: 1px solid #ececec;
+}
+.shopping-cart__inner {
+  padding: 0 30px;
+}
+.shopping-cart__link {
+  position: relative;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 45px;
+  color: $text-color;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 18px;
+    top: 0px;
+    left: 0px;
+    background-color: $bg-color;
+    background-image: url("../img/icon-cart.svg");
+    opacity: 0.2;
+  }
+}
