@@ -1,7 +1,5 @@
 .main-nav {
-  width: 320px;
   display: block;
-  position: absolute;
   top: 81px;
   left: 0px;
   background-color: $bg-color;
@@ -18,27 +16,30 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
 }
 .main-nav__item {
   border-bottom: 1px solid #ececec;
 }
 .main-nav__item-link {
-  padding: 0 30px;
   display: block;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   color: $text-color;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
-  
-  &:hover {
+  text-align: center;
+  &[href]:hover {
     color: rgba($text-color, 0.6);
     cursor: pointer;
   }
-  &:active {
+  &[href]:active {
     color: rgba($text-color, 0.3);
   }
 }

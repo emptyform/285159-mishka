@@ -2,8 +2,6 @@
   margin-bottom: 35px;
 }
 .goods__header {
-  padding-left: 30px;
-  padding-right: 30px;
   padding-top: 80px;
   padding-bottom: 127px;
   background-color: $bg-color;
@@ -14,7 +12,6 @@
 .goods__title {
   margin: 0;
   padding: 0;
-  margin: 0 8px;
   text-align: center;
   font-size: 27px;
   line-height: 30px;
@@ -25,10 +22,6 @@
   flex-direction: column;
 }
 .goods__item {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
@@ -36,16 +29,10 @@
   cursor: pointer;
   color: $text-color-contrast;
   &--interior {
-    background-color: $interior-bg-color;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    background-position: 90% center;
+    background-color: $interior-bg-color;    
   }
   &--toys {
     background-color: $toys-bg-color;
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    background-position: 90% center;
   }  
   &:hover {
   }
@@ -54,5 +41,18 @@
   }
 }
 .goods__item-name {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-right: 155px;
+  &--interior {
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+  }
+  &--toys {
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+  }  
 }

@@ -1,0 +1,213 @@
+.order-options {
+}
+.order-options__item {
+  padding: 0;
+  margin: 0;
+  border: none;
+  &--type {
+    margin-bottom: 45px;
+  }
+  &--color {
+    margin-bottom: 45px;
+  }
+  &--name {
+    margin-bottom: 34px;
+  }
+  &--phone {
+    margin-bottom: 34px;
+  }
+  &--email {
+    margin-bottom: 34px;
+  }
+  &--details {
+    margin-bottom: 20px;
+  } 
+}
+.order-options__item-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 41px;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  color: $color-fourth;
+}
+.order-options__field {
+  margin-bottom: 31px;
+  &:last-of-type {
+  margin-bottom: 0px;
+  }
+  &--text {
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid $text-color; 
+  }
+  &--phone {
+    position: relative;
+    padding-bottom: 12px;
+    border-bottom: 2px solid $text-color; 
+    &::before {
+      position: absolute;
+      content:"";
+      width: 25px;
+      height: 24px;
+      top: 0px;
+      right: 10px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+    }
+  }
+  &--email {
+    position: relative;
+    padding-bottom: 12px;
+    border-bottom: 2px solid $text-color; 
+    &::before {
+      position: absolute;
+      content:"";
+      width: 32px;
+      height: 25px;
+      top: 0px;
+      right: 10px;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-color: transparent;
+    }
+  }
+}
+.order-options__input {
+  &--radio {  
+    display: none;
+  }
+  &--checkbox {
+    display: none;
+  }
+  &--text {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    box-sizing: border-box;
+    border: none;
+  }
+  &--phone {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    box-sizing: border-box;
+    border: none;
+  }
+  &--email {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    box-sizing: border-box;
+    border: none;
+  }
+}
+.order-options__label {
+  display: block;
+  padding-left: 62px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  &--text {
+    padding-left: 0px;
+    margin-bottom: 18px;
+  }
+}
+.order-options__label--radio {
+  position: relative;
+  cursor: pointer;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -8px;
+    left: 0px;
+    width: 34px;
+    height: 34px;
+    border: 2px solid $color-third;
+    border-radius: 50%;
+  }
+  &::after {
+    display: none;
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 11px;
+    width: 16px;
+    height: 16px;
+    background-color: $color-input;
+    border-radius: 50%;
+  }
+}
+.order-options__label--checkbox {
+  position: relative;
+  cursor: pointer;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 35px;
+    top: -8px;
+    left: 0px;
+    border: 2px solid $color-third;
+  }
+  &::after {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    top: -4px; 
+    left: 6px;
+    background-image: url("../img/icon-tick.svg");
+  }
+}
+.order-options__label:hover::before {
+  border-color:  $color-input;
+}
+.order-options__input:checked + .order-options__label:hover::before {
+  border-color:  $color-input;
+}
+.order-options__input:checked + .order-options__label::after {
+  display: block;
+}
+.order-options__input:disabled + .order-options__label::before,
+.order-options__input:disabled + .order-options__label:hover::before,
+.order-options__input:disabled:checked + .order-options__label::before,
+.order-options__input:disabled:checked + .order-options__label:hover::before{
+  border-color: $color-input-disabled;
+}
+/* Как стилизовать placeholder через класс???
+input-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px; 
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba($color-third,0.3);
+}
+*/
+.order-options__message {
+  width: 100%;
+  min-height: 138px;
+  padding-top: 20px;
+  padding-left: 20px;
+  resize: none;
+  box-sizing: border-box;
+  border: 2px solid $text-color;
+}
+.order-options__legend {
+  display: block;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-third;
+  background-color: $bg-color;
+}

@@ -5,16 +5,20 @@
 }
 .search-field__inner {
   position: relative;
-  padding: 0 30px;
 }
 .search-field__input {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 45px;
+  padding-left: 46px;
   box-sizing: border-box;
   border: none;
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #d0f1ea;
+  }
 }
 @include input-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px; 
   line-height: 24px;
   font-weight: 700;
@@ -28,17 +32,13 @@
   width: 18px;
   height: 19px;
   top: 5px;
-  left: 30px;
+  left: 2px;
   font-size: 0px;
   background-color: $bg-color;
   background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   box-shadow: none;
   border: none;
-}
-.search-field__input:focus {
-  outline: none;
-  box-shadow: 0px 0px 0px 1px #d0f1ea;
 }
 .search-field__button:hover {
   opacity: 0.6;

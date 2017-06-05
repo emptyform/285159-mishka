@@ -1,10 +1,11 @@
 .page-footer {
-  width: 320px;
-  margin: 0 auto;
   margin-top: 39px;
   background-color: $bg-color-second;
 }
 .page-footer__social {
+  border-bottom: 1px solid #e5e5e5;
+}
+.page-footer__social-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -12,9 +13,6 @@
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 39px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-bottom: 1px solid #e5e5e5;
 }
 .page-footer__title {
   font-size: 0px;
@@ -22,8 +20,6 @@
 .page-footer__copyright {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 .page-footer__copyright-title {
   margin: 0;

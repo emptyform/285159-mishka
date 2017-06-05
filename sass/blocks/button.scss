@@ -33,5 +33,16 @@
   &--submit:hover {
     border-color: darken($border-color-checked,10%);
     background-color: darken($border-color-checked,10%);
-  }  
+  }
+  &--make-oder {
+    display: block;
+    margin-left: 34px;
+    width: 188px;  
+    text-align: center;
+  }
+  &--sent-order {
+    display: block; 
+    width: 100%;
+    text-align: center;
+  }
 }
