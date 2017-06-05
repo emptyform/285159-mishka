@@ -15,7 +15,7 @@
   text-align: center;
   font-size: 27px;
   line-height: 30px;
-  font-weight: 700; 
+  font-weight: 700;
 }
 .goods__list {
   display: flex;
@@ -29,15 +29,15 @@
   cursor: pointer;
   color: $text-color-contrast;
   &--interior {
-    background-color: $interior-bg-color;    
+    background-color: $interior-bg-color;
   }
   &--toys {
     background-color: $toys-bg-color;
-  }  
+  }
   &:hover {
   }
   &:active {
-    color: rgba($text-color-contrast, 0.3); 
+    color: rgba($text-color-contrast, 0.3);
   }
 }
 .goods__item-name {
@@ -54,5 +54,5 @@
     background-image: url("../img/icon-toy.svg");
     background-repeat: no-repeat;
     background-position: 95% center;
-  }  
+  }
 }

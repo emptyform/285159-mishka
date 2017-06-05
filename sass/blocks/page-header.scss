@@ -1,7 +1,7 @@
 .page-header {
   position: relative;
   background-color: $bg-color;
-  color: $text-color;  
+  color: $text-color;
 }
 .page-header__title {
   font-size: 0px;
@@ -18,12 +18,12 @@
   width: 86px;
   height: 36px;
   margin-left: 85px;
-}  
+}
 .page-header__logo[href]{
   &:hover {
     opacity: 0.6;
     cursor: pointer
-  } 
+  }
   &:active {
     opacity: 0.3;
   }

@@ -21,7 +21,7 @@
   }
   &--details {
     margin-bottom: 20px;
-  } 
+  }
 }
 .order-options__item-title {
   margin: 0;
@@ -40,12 +40,12 @@
   &--text {
     margin-bottom: 25px;
     padding-bottom: 12px;
-    border-bottom: 2px solid $text-color; 
+    border-bottom: 2px solid $text-color;
   }
   &--phone {
     position: relative;
     padding-bottom: 12px;
-    border-bottom: 2px solid $text-color; 
+    border-bottom: 2px solid $text-color;
     &::before {
       position: absolute;
       content:"";
@@ -61,7 +61,7 @@
   &--email {
     position: relative;
     padding-bottom: 12px;
-    border-bottom: 2px solid $text-color; 
+    border-bottom: 2px solid $text-color;
     &::before {
       position: absolute;
       content:"";
@@ -76,7 +76,7 @@
   }
 }
 .order-options__input {
-  &--radio {  
+  &--radio {
     display: none;
   }
   &--checkbox {
@@ -164,7 +164,7 @@
     content: "";
     width: 22px;
     height: 22px;
-    top: -4px; 
+    top: -4px;
     left: 6px;
     background-image: url("../img/icon-tick.svg");
   }
@@ -187,7 +187,7 @@
 /* Как стилизовать placeholder через класс???
 input-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 17px; 
+  font-size: 17px;
   line-height: 18px;
   font-weight: 400;
   color: rgba($color-third,0.3);
