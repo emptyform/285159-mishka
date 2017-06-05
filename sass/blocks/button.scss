@@ -1,0 +1,48 @@
+.button {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 2px solid $color-third;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $color-third;
+  background-color: $bg-color;
+  box-shadow: none;
+  text-decoration: none;
+  &:hover {
+    color: $text-color-contrast;
+    background-color: $color-third;
+  }
+  &:active {
+    color: rgba($text-color-contrast, 0.3);
+  }
+  &--reviews {
+    text-align: center;
+  }
+  &--feedback {
+    display: block;
+    text-align: center;
+  }
+  &--submit {
+    display: block;
+    width: 100%;
+    border-color: $border-color-checked;
+    background-color: $border-color-checked;
+    color: $text-color-contrast;
+  }
+  &--submit:hover {
+    border-color: darken($border-color-checked,10%);
+    background-color: darken($border-color-checked,10%);
+  }
+  &--make-oder {
+    display: block;
+    margin-left: 34px;
+    width: 188px;
+    text-align: center;
+  }
+  &--sent-order {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

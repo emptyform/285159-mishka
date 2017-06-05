@@ -1,0 +1,22 @@
+.map {
+  position: relative;
+  width: auto;
+  min-height: 457px;
+  margin-bottom: 39px;
+  background-color: #e7e4dd;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 67px;
+    height: 100px;
+    margin-left: -33px;
+    margin-top: -50px;
+    background-image: url("../img/icon-map-pin.svg");
+    background-repeat: no-repeat;
+  }
+}

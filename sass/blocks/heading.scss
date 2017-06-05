@@ -1,0 +1,25 @@
+.heading__inner {
+  &--grey{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: $bg-color-second;
+  }
+  &--white {
+    padding-top: 32px;
+    padding-bottom:32px;
+    background-color: $bg-color;
+  }
+}
+.heading__title {
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $text-color;
+}
+.heading__text {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-third;
+}
