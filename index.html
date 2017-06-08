@@ -6,19 +6,21 @@
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
-  <body class="page">
+  <body>
     <header class="page-header">
+      <h1 class="page-header__title visually-hidden">Интернет магазин милых штучек ручной работы для дома</h1>
       <div class="page-header__wrapper">
-        <div class="container">
-          <div class="page-header__inner">
+        
+          <div class="page-header__inner container">
             <a class="page-header__logo" title="Mishka" tabindex="0">
               <img src="img/logo-mobile.svg" width="86" height="36" alt="Mishka">
             </a>
-            <button class="page-header__toggle" type="button">Открыть меню</button>
-          </div>
-        </div>
+          </div>  
+        
       </div>
-      <nav class="main-nav">
+      
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -59,12 +61,12 @@
         </header>
         <div class="goods__list">
           <a class="goods__item goods__item--interior" href="" title="Предметы интерьера" tabindex="0">
-            <div class="container">
+            <div class="goods__item-inner">
               <span class="goods__item-name  goods__item-name--interior">Предметы интерьера</span>
             </div>
           </a>
           <a class="goods__item goods__item--toys" href="" title="Детские игрушки" tabindex="0">
-            <div class="container">
+            <div class="goods__item-inner">
               <span class="goods__item-name  goods__item-name--toys">Детские игрушки</span>
             </div>
           </a>
@@ -160,8 +162,11 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="container">
+      <div class="container">
+        <div class="page-footer__wrapper">   
+          <a class="page-footer__logo" title="Mishka" tabindex="0">
+            <img class="page-footer__logo-img" src="img/logo-mobile.svg" width="86" height="36" alt="Mishka">
+          </a>
           <section class="page-footer__social">
             <h2 class="page-footer__title">Мы в социальных сетях</h2>
             <div class="page-footer__social-wrapper">

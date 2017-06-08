@@ -1,23 +1,22 @@
 .page-header {
-  position: relative;
   background-color: $bg-color;
   color: $text-color;
 }
-.page-header__title {
-  font-size: 0px;
-}
 .page-header__wrapper {
+  @include container;
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 .page-header__inner {
-  display: flex;
   padding-top: 22px;
   padding-bottom: 22px;
 }
 .page-header__logo {
+  position: relative;
+  display: block;
+  margin: 0 auto;
   width: 86px;
   height: 36px;
-  margin-left: 85px;
 }
 .page-header__logo[href]{
   &:hover {
@@ -33,15 +32,26 @@
   width: 86px;
   height: 36px;
 }
-.page-header__toggle {
-  width: 21px;
-  height: 20px;
-  margin-left: auto;
-  margin-top: 7px;
-  font-size: 0;
-  background-image: url("../img/icon-menu-close.svg");
-  background-repeat: no-repeat;
-  border: none;
-  background-color: $bg-color;
-  box-shadow: none;
+@media (min-width: $tablet-width) {
+  .page-header__inner {
+    padding-bottom: 20px;
+}
+  .page-header__logo {
+    margin-left: 0;
+    margin-right: 0;
+    width: 114px;
+    height: 46px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .page-header__inner {
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+  .page-header__logo {
+    margin: 0 auto;
+    width: 149px;
+    height: 72px;
+  }
+  
 }
