@@ -28,7 +28,9 @@
   display: flex;
   flex-direction: column;
 }
-.special-offer__description {
+.special-offer__text {
+  padding: 0;
+  margin: 0;
   margin-bottom: 25px;
   font-size: 15px;
   line-height: 24px;
@@ -64,6 +66,10 @@
   display: block;
   max-width: 100%;
 }
+.special-offer__buy {
+  display: flex;
+  flex-direction: column;
+}
 .special-offer__price {
   align-self: center;
   margin-bottom: 30px;
@@ -76,5 +82,107 @@
   .special-offer__header {
     display: flex;
     flex-direction: row;
+    margin-bottom: 57px;
+  }
+  .special-offer__title {
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .special-offer__detail {
+    width: 72px;
+    min-height: 34px;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;    
+    margin-left: 70px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 17px;
+  }
+  .special-offer__contetns {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .special-offer__description {
+    width: 290px;
+    margin-right: 44px;
+    flex-shrink: 0;
+    align-self: flex-start;
+  }
+  .special-offer__text {
+    margin-bottom: 20px;
+  }
+  .special-offer__specification {
+    margin-bottom: 60px;
+  }
+  .special-offer__img {
+    width: 334px;
+    margin-bottom: 0;
+    height: 404px;
+    flex-shrink: 0;
+  }
+  .special-offer__img img {
+    width: 334px;
+    height: 404px;
+  }
+  .special-offer__buy {
+    width: 290px;
+    margin-right: 44px;  
+    margin-top: -115px;
+  }
+  .special-offer__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 35px;
   }
 }
+@media(min-width:$desktop-width) {
+  .special-offer__header {
+    margin-bottom: 60px;
+  }
+  .special-offer__title {
+    position: relative;
+    width: auto;
+    order: 2;
+    margin-bottom: 55px;
+    font-size: 53px;
+    line-height: 57px;
+    background-color: transparent;
+    z-index: 2;
+  }
+  .special-offer__detail {
+    margin-left: 46px;
+    margin-right: 56px;
+  }
+  .special-offer__contetns {
+    width: 875px;
+    margin-left: 175px;
+    margin-top: -200px;
+  }
+  .special-offer__description {
+    width: 292px;
+    padding-top: 165px;
+    margin-right: 58px;
+  }
+  .special-offer__text {
+    margin-bottom: 70px;
+  }
+  .special-offer__specification {
+    margin-bottom: 110px;
+  }
+  .special-offer__img {
+    width: 525px;
+    height: 635px;
+    flex-shrink: 0;
+  }
+  .special-offer__img img {
+    width: 525px;
+    height: 635px;
+  }  
+}
+
