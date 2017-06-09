@@ -79,6 +79,10 @@
   color: #444444;
 }
 @media(min-width:$tablet-width) {
+  .special-offer {
+    padding-bottom: 96px;
+    margin-bottom: 75px;
+  }
   .special-offer__header {
     display: flex;
     flex-direction: row;
@@ -142,6 +146,10 @@
   }
 }
 @media(min-width:$desktop-width) {
+  .special-offer {
+    padding-bottom: 69px;
+    margin-bottom: 65px;
+  }
   .special-offer__header {
     margin-bottom: 60px;
   }
