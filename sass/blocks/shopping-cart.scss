@@ -6,7 +6,7 @@
   display: block;
   margin-top: 30px;
   margin-bottom: 30px;
-  padding-left: 45px;
+  text-align: center;
   color: $text-color;
   font-size: 17px;
   line-height: 24px;
@@ -23,4 +23,7 @@
     background-image: url("../img/icon-cart.svg");
     opacity: 0.2;
   }
+}
+@media (min-width: $tablet-width ) {
+  display: flex;
 }

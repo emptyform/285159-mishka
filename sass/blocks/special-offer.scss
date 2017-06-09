@@ -7,8 +7,6 @@
   background-repeat: repeat-x;
   background-position: bottom;
 }
-.special-offer__header {
-}
 .special-offer__title {
   margin: 0;
   padding: 0;
@@ -73,4 +71,10 @@
   line-height: 24px;
   font-weight: 700;
   color: #444444;
+}
+@media(min-width:$tablet-width) {
+  .special-offer__header {
+    display: flex;
+    flex-direction: row;
+  }
 }

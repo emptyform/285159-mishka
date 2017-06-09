@@ -1,10 +1,10 @@
 .page-header {
+  width: auto;
+  position: relative;
   background-color: $bg-color;
   color: $text-color;
 }
 .page-header__wrapper {
-  @include container;
-  position: relative;
   border-bottom: 1px solid #ececec;
 }
 .page-header__inner {
@@ -12,7 +12,6 @@
   padding-bottom: 22px;
 }
 .page-header__logo {
-  position: relative;
   display: block;
   margin: 0 auto;
   width: 86px;
@@ -53,5 +52,4 @@
     width: 149px;
     height: 72px;
   }
-  
 }
