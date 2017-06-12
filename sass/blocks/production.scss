@@ -55,10 +55,111 @@
   }
 }
 .production__description {
+  margin: 0;
+  padding: 0;
   padding-left: 34px;
   padding-right: 58px;
   margin-bottom: 32px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
+}
+@media(min-width:$tablet-width) {
+  .production {
+    padding: 0;
+    margin-bottom: 60px;
+    border: none;
+  }
+  .production-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .production__title {
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    padding-left: 100px;
+    border-top: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    font-size: 20px;
+    line-height: 24px;   
+    order: 1;
+    &::before {
+      top: 35px;
+      left: 42px;
+    }
+  }
+  .production__video {
+    position: relative;
+    margin-bottom: 0;
+    width: 668px;
+    order: 0;
+  }
+  .production__video-file {
+    width: 668px;
+    height: 455px;
+  }
+  .production__video-play {
+  }
+  .production__inner {
+    border-bottom: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    order: 3;
+  }
+  .production__description {
+    padding-left: 42px;
+    padding-right: 44px;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+}
+@media(min-width:$desktop-width) {
+  .production {
+    width: 1050px;
+    margin-bottom: 106px;;
+  }  
+  .production-wrapper {
+    position: relative;
+    
+ }
+  .production__video {
+    position: absolute;  
+    width: 682px;
+    height: 454px;
+    top: 0px;
+    left: 0px;
+  }
+  .production__video-file {
+    width: 682px;
+    height: 454px;
+  }
+  .production__title {
+    position: relative;
+    min-height: 48px;
+    margin: 0;
+    padding: 0;
+    margin-left: 681px;
+    padding-bottom: 42px;
+    padding-top: 100px;
+    padding-left: 78px;
+    padding-right: 138px;   
+    &::before {
+      position: absolute;
+      top: 40px;
+      left: 78px;
+    }
+  }
+  .production__inner {
+    margin-left: 681px;
+    padding-bottom: 36px;
+  }
+  .production__description {
+    min-height: 120px;
+    margin-bottom: 0;
+    padding-left: 78px;
+    padding-bottom: 50px;
+  }
 }
