@@ -7,6 +7,7 @@
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   &:before {
     position: absolute;
     content: "";
@@ -18,5 +19,17 @@
     margin-top: -50px;
     background-image: url("../img/icon-map-pin.svg");
     background-repeat: no-repeat;
+  }
+}
+@media(min-width:$tablet-width) {
+  
+}
+@media(min-width:$desktop-width) {
+  .map {
+    position: absolute;
+    width: 525px;
+    height: 458px;
+    top: 0px;
+    right: 0px;
   }
 }

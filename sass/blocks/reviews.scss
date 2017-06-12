@@ -4,6 +4,7 @@
 .reviews-wrapper {
   display: flex;
   flex-direction: column;
+  padding: 0px;
 }
 .reviews__title {
   padding: 0;
@@ -21,6 +22,8 @@
   padding: 0;
 }
 .reviews__text {
+  margin: 0px;
+  padding: 0px;
   margin-bottom: 35px;
   font-size: 15px;
   line-height: 30px;
@@ -53,17 +56,86 @@
   border: 1px solid $border-color;
   background-color: $bg-color;
   background-repeat: no-repeat;
-}
-.reviews__pages-item--prev {
-  background-image: url("../img/icon-left-arrow.svg");
-  background-position: 20% center;
   &:hover {
   }
   &:active {
   }
 }
+.reviews__pages-item--prev {
+  background-image: url("../img/icon-left-arrow.svg");
+  background-position: 20% center;
+}
 .reviews__pages-item--next {
   margin-left: -1px;
   background-image: url("../img/icon-right-arrow.svg");
   background-position: 80% center;
+}
+@media(min-width:$tablet-width) {
+  .reviews {
+    margin-bottom: 70px;
+    padding-bottom: 0;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    
+  }
+  .reviews-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .reviews__title {
+    width: 334px;
+    margin-top: 90px;
+    margin-bottom: 70px;
+    font-size: 43px;
+    line-height: 50px;
+    background-color: transparent;
+    order: 1;
+  }
+  .reviews__content {
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;    
+    order:3;
+  }  
+  .reviews__text {
+    margin-bottom: 40px;
+  }  
+  .reviews__pages {
+    position: absolute;
+    margin:0;
+    right: 0px;
+    bottom: 50px;
+    width: 167px;
+ } 
+  .reviews__pages-item {
+  border: none;
+  background-color: transparent;
+ }
+.reviews__pages-item--prev {
+  background-position: 20% center;  
+}
+.reviews__pages-item--next {
+  margin-left: 0px;
+  background-position: 80% center;
+  }
+}
+@media(min-width:$desktop-width) {
+  .reviews {
+    margin-bottom: 65px;
+    background:none;
+  }
+  .reviews-wrapper {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .reviews__title {
+    margin-left: 175px;
+  }
+  .reviews__content {
+    margin-left: 175px;
+  }
 }
