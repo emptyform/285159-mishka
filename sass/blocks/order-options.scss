@@ -222,6 +222,23 @@ input-placeholder {
       margin-bottom: 70px;
       background-color: $bg-color-second;
     }
+    &--name {
+      padding-bottom: 50px;
+      background-color: $bg-color;
+    }
+    &--phone {
+      padding-top: 65px;
+      padding-bottom: 40px;
+      background-color: $bg-color-second;
+    }
+    &--email {
+      background-color: $bg-color-second;
+      padding-bottom: 50px;
+    }
+    &--details {
+      padding-top: 50px;
+      margin-bottom: 50px;
+    }
   }
   .order-options__item-wrapper {
     display: flex;
@@ -230,20 +247,32 @@ input-placeholder {
   }
   .order-options__item-title{
     &--type { 
-    margin-right: 130px;
+      margin-right: 130px;
     }
     &--color {
-    margin-right: 120px;
+      margin-right: 120px;
+    }
+    &--name {
+      margin-right: 124px;  
+    }
+    &--phone {
+      margin-bottom: 0px;
+      margin-right:: 134px;
+    }
+    &--email {
+      margin-right: 107px;     
+    }
+    &--details {
+      padding-top: 20px;
+      margin-right: 129px;
     }
   }  
   .order-options__controls {
-    &--type {      
-    }
+    width: 501px;
     &--color {
-      width: 501px;
       display: flex;
       flex-wrap: wrap;
-    }
+    }    
   }
   .order-options__field {
     margin-bottom: 0;
@@ -258,19 +287,27 @@ input-placeholder {
         margin-right: 0px;
       }
     }
-  }
-  
-  .order-options__input {
-    &--radio {
-      
+    &--text {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding-bottom: 0px;
+      margin-bottom: 40px;
+      border: none;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
     }
-  }
+    &--phone {
+      padding-bottom: 0px;
+    }
+  }    
   .order-options__label {
-    padding-left: 80px;
     font-size: 19px;
     line-height: 19px;
   }
   .order-options__label--radio {
+    padding-left: 80px;
     &::before {
       top: -14px;
       left: 0px;
@@ -285,6 +322,7 @@ input-placeholder {
     }
   }
   .order-options__label--checkbox {
+    padding-left: 80px;
     &::before {
       width: 50px;
       height: 48px;
@@ -298,6 +336,52 @@ input-placeholder {
       left: 12px;
       background-image: url("../img/icon-tick.svg");
     }
+  }
+  .order-options__label--text {
+    margin-bottom: 0px;
+  }
+  .order-options__input {
+    &--text {
+      width: 100%;
+      padding: 0px;
+      margin-left: 27px;
+      padding-right: 18px;
+      padding-left: 18px;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+      border-bottom: 2px solid $text-color;
+    }
+    &--phone {
+      width: 100%;
+      padding: 0px;
+      padding-right: 18px;
+      padding-left: 18px;
+      padding-bottom: 20px;
+      background-color: transparent;
+    }
+    &--email {
+      width: 100%;
+      padding: 0px;
+      padding-right: 18px;
+      padding-left: 18px;
+      padding-bottom: 20px;
+      background-color: transparent;
+    }
+  }
+  .order-options__message {
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+  .order-options-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .order-options__legend {
+    margin-bottom: 0px;
+    align-self: center;
+    order: 1;
   }
 }
 @media(min-width:$desktop-width) {
