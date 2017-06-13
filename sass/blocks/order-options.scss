@@ -35,7 +35,7 @@
 .order-options__field {
   margin-bottom: 31px;
   &:last-of-type {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   }
   &--text {
     margin-bottom: 25px;
@@ -51,7 +51,7 @@
       content:"";
       width: 25px;
       height: 24px;
-      top: 0px;
+      top: 0;
       right: 10px;
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
@@ -67,7 +67,7 @@
       content:"";
       width: 32px;
       height: 25px;
-      top: 0px;
+      top: 0;
       right: 10px;
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
@@ -117,7 +117,7 @@
   line-height: 18px;
   font-weight: 700;
   &--text {
-    padding-left: 0px;
+    padding-left: 0;
     margin-bottom: 18px;
   }
 }
@@ -128,7 +128,7 @@
     position: absolute;
     content: "";
     top: -8px;
-    left: 0px;
+    left: 0;
     width: 34px;
     height: 34px;
     border: 2px solid $color-third;
@@ -155,7 +155,7 @@
     width: 36px;
     height: 35px;
     top: -8px;
-    left: 0px;
+    left: 0;
     border: 2px solid $color-third;
   }
   &::after {
@@ -195,7 +195,7 @@ input-placeholder {
 */
 .order-options__message {
   width: 100%;
-  min-height: 138px;
+  min-height: 142px;
   padding-top: 20px;
   padding-left: 20px;
   resize: none;
@@ -246,29 +246,14 @@ input-placeholder {
     flex-wrap: wrap;
   }
   .order-options__item-title{
-    &--type { 
-      margin-right: 130px;
-    }
-    &--color {
-      margin-right: 120px;
-    }
-    &--name {
-      margin-right: 124px;  
-    }
-    &--phone {
-      margin-bottom: 0px;
-      margin-right:: 134px;
-    }
-    &--email {
-      margin-right: 107px;     
-    }
+    width: 167px;
     &--details {
-      padding-top: 20px;
-      margin-right: 129px;
+      margin-top: 20px;
     }
   }  
   .order-options__controls {
     width: 501px;
+    padding-bottom: 0;
     &--color {
       display: flex;
       flex-wrap: wrap;
@@ -276,6 +261,7 @@ input-placeholder {
   }
   .order-options__field {
     margin-bottom: 0;
+    padding-bottom: 0;
     &--type {
       margin-bottom: 67px;
     }
@@ -284,22 +270,22 @@ input-placeholder {
       margin-right: 24px;
       margin-bottom: 63px;
       &:nth-of-type(2n) {
-        margin-right: 0px;
+        margin-right: 0;
       }
     }
     &--text {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
-      padding-bottom: 0px;
+      padding-bottom: 0;
       margin-bottom: 40px;
       border: none;
       &:last-of-type {
-        margin-bottom: 0px;
+        margin-bottom: 0;
       }
     }
     &--phone {
-      padding-bottom: 0px;
+      padding-bottom: 0;
     }
   }    
   .order-options__label {
@@ -310,7 +296,7 @@ input-placeholder {
     padding-left: 80px;
     &::before {
       top: -14px;
-      left: 0px;
+      left: 0;
       width: 50px;
       height: 48px;
     }
@@ -327,7 +313,7 @@ input-placeholder {
       width: 50px;
       height: 48px;
       top: -8px;
-      left: 0px;
+      left: 0;
     }
     &::after {
       width: 33px;
@@ -343,7 +329,7 @@ input-placeholder {
   .order-options__input {
     &--text {
       width: 100%;
-      padding: 0px;
+      padding: 0;
       margin-left: 27px;
       padding-right: 18px;
       padding-left: 18px;
@@ -353,7 +339,7 @@ input-placeholder {
     }
     &--phone {
       width: 100%;
-      padding: 0px;
+      padding: 0;
       padding-right: 18px;
       padding-left: 18px;
       padding-bottom: 20px;
@@ -361,7 +347,7 @@ input-placeholder {
     }
     &--email {
       width: 100%;
-      padding: 0px;
+      padding: 0;
       padding-right: 18px;
       padding-left: 18px;
       padding-bottom: 20px;
@@ -369,8 +355,8 @@ input-placeholder {
     }
   }
   .order-options__message {
-    padding-bottom: 0px;
-    padding-right: 0px;
+    padding-bottom: 0;
+    padding-right: 0;
   }
   .order-options-inner {
     display: flex;
@@ -379,11 +365,65 @@ input-placeholder {
     justify-content: space-between;
   }
   .order-options__legend {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     align-self: center;
     order: 1;
   }
 }
 @media(min-width:$desktop-width) {
-  
+  .order-options__item {
+    &--type {
+      margin-bottom: 70px;
+    }
+    &--color {
+      padding-top: 70px;
+      margin-bottom: 70px;
+    }
+    &--name {
+      padding-bottom: 50px;
+    }
+    &--phone {
+      padding-top: 65px;
+      padding-bottom: 40px;
+    }
+    &--email {
+      padding-bottom: 50px;
+    }
+    &--details {
+      padding-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+  .order-options__item-wrapper {
+    margin-left: 64px;
+  }
+  .order-options__item-title{
+    width: 112px;   
+  }
+  .order-options__controls {
+    width: 700px;
+    &--color {
+      width: 780px;
+    }  
+  }
+  .order-options__field {
+    &--color {
+      widght: 263px;
+      margin-right: 0;
+    }
+  }  
+  .order-options__message {
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+  .order-options-inner {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .order-options__legend {
+    margin-bottom: 0;
+    align-self: center;
+    order: 1;
+  }
 }
