@@ -79,7 +79,6 @@
     position: relative;
     margin-bottom: 105px;
   }
-  .contacts 
   .contacts__title {
     width: 525px;
     margin-top: 88px;
@@ -102,5 +101,10 @@
   .contacts__information tbody {
     flex-direction: column;
     margin-left: 175px;
+  }
+  .contacts__inner {
+    width: 525px;
+    height: 457px;
+    background-color: yellow;
   }
 }
