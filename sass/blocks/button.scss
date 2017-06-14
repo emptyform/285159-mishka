@@ -25,19 +25,17 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    
-    
   }
   &--submit {
     display: block;
     width: 100%;
-    border-color: $border-color-checked;
-    background-color: $border-color-checked;
+    border-color: $modal-checked-color;
+    background-color: $modal-checked-color;
     color: $text-color-contrast;
   }
   &--submit:hover {
-    border-color: darken($border-color-checked,10%);
-    background-color: darken($border-color-checked,10%);
+    border-color: darken($modal-checked-color,10%);
+    background-color: darken($modal-checked-color,10%);
   }
   &--make-oder {
     display: block;
@@ -73,13 +71,13 @@
     &--submit {
       display: block;
       width: 100%;
-      border-color: $border-color-checked;
-      background-color: $border-color-checked;
+      border-color: $modal-checked-color;
+      background-color: $modal-checked-color;
       color: $text-color-contrast;
     }
     &--submit:hover {
-      border-color: darken($border-color-checked,10%);
-      background-color: darken($border-color-checked,10%);
+      border-color: darken($modal-checked-color,10%);
+      background-color: darken($modal-checked-color,10%);
     }
     &--make-oder {
       display: block;

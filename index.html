@@ -186,27 +186,19 @@
         </div>
       </div>
     </footer>
-
+   
     <div class="modal">
       <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-      <b class="modal__choice-size">Выберите размер:</b>
-      <form class="modal__size-list" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="modal__size-list-wrapper">
-          <div class="modal__size-list--inner"> 
-            <input class="modal__size-input" type="radio" name="size" value="S" id="size-S" checked>
-            <label class="modal__size-label" for="size-S" tabindex="0">S</label>
-          </div>
-          <div class="modal__size-list--inner">  
-            <input class="modal__size-input" type="radio" name="size" value="M" id="size-M">
-            <label class="modal__size-label" for="size-S" tabindex="0">M</label>
-          </div>
-          <div class="modal__size-list--inner">
-            <input class="modal__size-input" type="radio" name="size" value="L" id="size-L">
-            <label class="modal__size-label" for="size-S" tabindex="0">L</label>
-          </div>  
-        </div>
-        <button class="button  button--submit" type="submit">Добавить</button>
+      <p class="modal__choice-size">Выберите размер:</p>
+      <form class="modal__size-list" action="https://echo.htmlacademy.ru" method="post">
+        <input type="radio" name="size" id="size-s" checked>
+        <label class="modal__size-label" for="size-s">S</label>
+        <input type="radio" name="size" id="size-m">
+        <label class="modal__size-label" for="size-m">M</label>
+        <input type="radio" name="size" id="size-l">
+        <label class="modal__size-label" for="size-l">L</label>
       </form>
+      <button class="button  button--submit" type="submit">Добавить</button>
     </div>
 
     <div class="modal-overlay"></div>
