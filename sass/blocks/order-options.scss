@@ -3,22 +3,14 @@
 .order-options__item {
   padding: 0;
   margin: 0;
+  margin-bottom: 34px;
   border: none;
   &--type {
     margin-bottom: 45px;
   }
   &--color {
     margin-bottom: 45px;
-  }
-  &--name {
-    margin-bottom: 34px;
-  }
-  &--phone {
-    margin-bottom: 34px;
-  }
-  &--email {
-    margin-bottom: 34px;
-  }
+  }  
   &--details {
     margin-bottom: 20px;
   }
@@ -41,22 +33,25 @@
     top: 10px;
     right: 0px;
     background-color: $color-fourth;
+    z-index: 2;
   }
+}
+.order-options__item-title span {
+  position: relative;
+  padding-right: 25px;
+  background-color: $bg-color;
+  z-index: 3;
 }
 .order-options__field {
   margin-bottom: 31px;
   &:last-of-type {
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
   &--text {
-    margin-bottom: 25px;
-    padding-bottom: 12px;
-    border-bottom: 2px solid $text-color;
+    margin-bottom: 25px;    
   }
   &--phone {
     position: relative;
-    padding-bottom: 12px;
-    border-bottom: 2px solid $text-color;
     &::before {
       position: absolute;
       content:"";
@@ -67,12 +62,10 @@
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-color: transparent;
-    }
+    }    
   }
   &--email {
     position: relative;
-    padding-bottom: 12px;
-    border-bottom: 2px solid $text-color;
     &::before {
       position: absolute;
       content:"";
@@ -82,11 +75,23 @@
       right: 10px;
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
-      background-color: transparent;
+      background-color: transparent;      
     }
-  }
+  }  
 }
 .order-options__input {
+  font-family: inherit;
+  font-style: inherit;
+  color: $text-color;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $color-third;
+  }
   &--radio {
     display: none;
   }
@@ -94,31 +99,15 @@
     display: none;
   }
   &--text {
+    position: relative;
     width: 100%;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 12px;
     padding-left: 2px;
     padding-right: 2px;
     box-sizing: border-box;
     border: none;
-  }
-  &--phone {
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 2px;
-    padding-right: 2px;
-    box-sizing: border-box;
-    border: none;
-  }
-  &--email {
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 2px;
-    padding-right: 2px;
-    box-sizing: border-box;
-    border: none;
+    border-bottom: 2px solid $text-color;
   }
 }
 .order-options__label {
@@ -195,15 +184,6 @@
 .order-options__input:disabled:checked + .order-options__label:hover::before{
   border-color: $color-input-disabled;
 }
-/* Как стилизовать placeholder через класс???
-input-placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: 400;
-  color: rgba($color-third,0.3);
-}
-*/
 .order-options__message {
   width: 100%;
   min-height: 142px;
@@ -212,6 +192,18 @@ input-placeholder {
   resize: none;
   box-sizing: border-box;
   border: 2px solid $text-color;
+  font-family: inherit;
+  font-style: inherit;
+  color: $text-color;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $color-third;
+  }
 }
 .order-options__legend {
   display: block;
@@ -255,6 +247,7 @@ input-placeholder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
   }
   .order-options__item-title{
     width: 167px;
@@ -264,7 +257,11 @@ input-placeholder {
     &--details {
       margin-top: 20px;
     }
-  }  
+  }
+  .order-options__item-title span {
+    padding-right: 0;
+    background-color: transparent;
+  }
   .order-options__controls {
     width: 501px;
     padding-bottom: 0;
@@ -274,6 +271,9 @@ input-placeholder {
     }    
   }
   .order-options__field {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
     margin-bottom: 0;
     padding-bottom: 0;
     &--type {
@@ -288,9 +288,6 @@ input-placeholder {
       }
     }
     &--text {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
       padding-bottom: 0;
       margin-bottom: 40px;
       border: none;
@@ -300,12 +297,12 @@ input-placeholder {
     }
     &--phone {
       padding-bottom: 0;
-    }
+    }    
   }    
   .order-options__label {
     font-size: 19px;
     line-height: 19px;
-  }
+  }  
   .order-options__label--radio {
     padding-left: 80px;
     &::before {
@@ -340,7 +337,18 @@ input-placeholder {
   .order-options__label--text {
     margin-bottom: 0px;
   }
+  .order-options__label-uderline {
+    
+  }
   .order-options__input {
+    font-size: 19px;
+    line-height: 19px;
+    background-color: transparent;
+    box-sizing: border-box;
+    &::placeholder {
+      font-size: 19px;
+      line-height: 19px;
+    }
     &--text {
       width: 100%;
       padding: 0;
@@ -348,29 +356,18 @@ input-placeholder {
       padding-right: 18px;
       padding-left: 18px;
       padding-bottom: 20px;
-      box-sizing: border-box;
       border-bottom: 2px solid $text-color;
-    }
-    &--phone {
-      width: 100%;
-      padding: 0;
-      padding-right: 18px;
-      padding-left: 18px;
-      padding-bottom: 20px;
-      background-color: transparent;
-    }
-    &--email {
-      width: 100%;
-      padding: 0;
-      padding-right: 18px;
-      padding-left: 18px;
-      padding-bottom: 20px;
-      background-color: transparent;
-    }
+    }   
   }
   .order-options__message {
+    font-size: 19px;
+    line-height: 19px;
     padding-bottom: 0;
     padding-right: 0;
+    &::placeholder {
+      font-size: 19px;
+      line-height: 19px;
+    }
   }
   .order-options-inner {
     display: flex;
@@ -422,8 +419,11 @@ input-placeholder {
   }
   .order-options__field {
     &--color {
-      widght: 263px;
+      width: 260px;
       margin-right: 0;
+      &:last-of-type {
+        margin-bottom: 70px;
+      }
     }
   }  
   .order-options__message {

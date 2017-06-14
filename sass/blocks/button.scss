@@ -20,8 +20,13 @@
     text-align: center;
   }
   &--feedback {
+    width: 256px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    
+    
   }
   &--submit {
     display: block;
@@ -92,7 +97,6 @@
   .button {
     &--feedback {
       margin-left: 175px;
-      margin-bottom: 56px;
     }
     &--make-oder {
       width: 226px;

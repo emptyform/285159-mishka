@@ -1,5 +1,11 @@
 .contacts {
 }
+.contacts-wrapper {
+  width: 260px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
 .contacts__title {
   margin: 0;
   padding: 0;
@@ -44,9 +50,14 @@
   }  
 }
 @media(min-width:$tablet-width) {
+  .contacts-wrapper {
+    position: relative;
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   .contacts__title {
     margin-bottom: 67px;
-    position: relative;
     font-size: 43px;
     line-height: 50px;
     &::before {
@@ -55,13 +66,15 @@
       width: 50px;
       height: 81px;
       top: 0px;
-      right: 0px;
+      right: 50px;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
     }
   }
   .contacts__information {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 56px;
     font-size: 17px;
     line-height: 30px;
@@ -69,19 +82,35 @@
   .contacts__information tbody {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .contacts__date {
     margin-right: 65px;
+    &:last-of-type{
+      margin-right: 0px;
+    }
   }
 }
 @media(min-width:$desktop-width) {
   .contacts {
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 105px;
   }
-  .contacts__title {
+  .contacts-wrapper {
     width: 525px;
-    margin-top: 88px;
+    padding-left: 0;
+    padding-right: 525px;
+    margin: 0;  
+  } 
+  .contacts__title {
+    padding-right: 50px;
+    margin-top: 70px;
     margin-left: 175px;
     margin-bottom: 67px;
     position: relative;
@@ -98,13 +127,16 @@
       background-repeat: no-repeat;
     }
   }
+  .contacts__information {
+    display: table;
+    width: 301px;
+    margin-left: 175px;
+    margin-bottom: 40px;
+  }
   .contacts__information tbody {
     flex-direction: column;
-    margin-left: 175px;
   }
-  .contacts__inner {
-    width: 525px;
-    height: 457px;
-    background-color: yellow;
+  .contacts__date {
+    margin-right: 0;
   }
 }
