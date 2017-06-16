@@ -83,7 +83,7 @@
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
     font-size: 20px;
-    line-height: 24px;   
+    line-height: 24px;
     order: 1;
     &::before {
       top: 35px;
@@ -120,13 +120,12 @@
   .production {
     width: 1050px;
     margin-bottom: 106px;;
-  }  
+  }
   .production-wrapper {
     position: relative;
-    
- }
+  }
   .production__video {
-    position: absolute;  
+    position: absolute;
     width: 682px;
     height: 454px;
     top: 0px;
@@ -145,7 +144,7 @@
     padding-bottom: 42px;
     padding-top: 100px;
     padding-left: 78px;
-    padding-right: 138px;   
+    padding-right: 138px;
     &::before {
       position: absolute;
       top: 40px;

@@ -49,7 +49,7 @@
   }
   .main-nav--nojs  .main-nav__item {
     display: block;
-  }  
+  }
   .main-nav--nojs .main-nav__user {
     display: block;
   }
@@ -95,7 +95,7 @@
     background-color: transparent;
   }
   .main-nav__toggle {
-    display: none;    
+    display: none;
   }
   .main-nav__wrapper {
     width: 668px;
@@ -131,11 +131,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     order: -1;
-  }  
+  }
   .main-nav__hidden-item {
     &--delivery{
       display: block;
-      width: 334px; 
+      width: 334px;
       text-align: right;
     }
   }
@@ -190,7 +190,7 @@
     width: auto;
     &:first-of-type {
       margin-right: 60px;
-    }   
+    }
     &--delivery {
       width: 350px;
       margin-left: auto;
@@ -206,5 +206,5 @@
     &--delivery {
       font-weight: 400;
     }
-  }  
+  }
 }

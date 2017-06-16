@@ -25,17 +25,17 @@
   }
 }
 @media (min-width: $tablet-width ) {
-  .shopping-cart { 
+  .shopping-cart {
     width: 264px;
     border: none;
     border-left: 1px solid $border-color;
-  }           
+  }
   .shopping-cart__link {
-    margin: 0;            
+    margin: 0;
     margin-left:32px;
     padding-left: 52px;
     margin-top: 36px;
   }
-} 
+}
 @media(min-width:$desktop-width) {
 }

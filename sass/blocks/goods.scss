@@ -1,10 +1,9 @@
 .goods {
   margin-bottom: 35px;
-  
 }
 .goods__innner {
   padding-top: 80px;
-} 
+}
 .goods__header {
   padding-bottom: 127px;
   background-color: $bg-color;
@@ -68,7 +67,7 @@
 @media (min-width:$tablet-width) {
   .goods {
     margin-top: -49px;
-    border-top: 1px solid $border-color; 
+    border-top: 1px solid $border-color;
     margin-bottom: 60px;
   }
   .goods__innner {
@@ -82,7 +81,7 @@
     line-height: 50px;
   }
   .goods__list {
-    flex-direction: row; 
+    flex-direction: row;
     width: 668px;
     margin: 0 auto;
   }
@@ -90,28 +89,28 @@
     padding-top: 35px;
     padding-bottom: 30px;
     font-size: 20px;
-    line-height: 30px;    
+    line-height: 30px;
   }
   .goods__item-inner {
     width: 262px;
     padding: 0 36px;
-  }  
+  }
   .goods__item-name {
-    padding-rigth: 189px; 
+    padding-rigth: 189px;
   }
 }
 @media (min-width:$desktop-width) {
   .goods {
     margin-top: -49px;
     margin-bottom: 140px;
-    border-top: none; 
+    border-top: none;
   }
   .goods__innner {
     width: 1050px;
     padding-left: 50px;
-    padding-right: 50px; 
+    padding-right: 50px;
     margin: 0 auto;
-    border-top: 1px solid $border-color; 
+    border-top: 1px solid $border-color;
   }
   .goods__title {
     margin-right: 199px;
@@ -119,7 +118,7 @@
     margin-bottom: 368px;
     font-size: 53px;
     line-height: 57px;
-  }  
+  }
   .goods__list {
     width: 1050px;
     margin: 0 auto;
@@ -128,7 +127,7 @@
     padding-top: 35px;
     padding-bottom: 30px;
     font-size: 20px;
-    line-height: 30px;    
+    line-height: 30px;
   }
   .goods__item-inner {
     width: 525px;

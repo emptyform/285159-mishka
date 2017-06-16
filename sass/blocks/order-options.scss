@@ -10,7 +10,7 @@
   }
   &--color {
     margin-bottom: 45px;
-  }  
+  }
   &--details {
     margin-bottom: 20px;
   }
@@ -48,7 +48,7 @@
     margin-bottom: 0;
   }
   &--text {
-    margin-bottom: 25px;    
+    margin-bottom: 25px;
   }
   &--phone {
     position: relative;
@@ -62,7 +62,7 @@
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-color: transparent;
-    }    
+    }
   }
   &--email {
     position: relative;
@@ -75,9 +75,9 @@
       right: 10px;
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
-      background-color: transparent;      
+      background-color: transparent;
     }
-  }  
+  }
 }
 .order-options__input {
   font-family: inherit;
@@ -268,7 +268,7 @@
     &--color {
       display: flex;
       flex-wrap: wrap;
-    }    
+    }
   }
   .order-options__field {
     display: flex;
@@ -297,12 +297,12 @@
     }
     &--phone {
       padding-bottom: 0;
-    }    
-  }    
+    }
+  }
   .order-options__label {
     font-size: 19px;
     line-height: 19px;
-  }  
+  }
   .order-options__label--radio {
     padding-left: 80px;
     &::before {
@@ -337,9 +337,6 @@
   .order-options__label--text {
     margin-bottom: 0px;
   }
-  .order-options__label-uderline {
-    
-  }
   .order-options__input {
     font-size: 19px;
     line-height: 19px;
@@ -357,7 +354,7 @@
       padding-left: 18px;
       padding-bottom: 20px;
       border-bottom: 2px solid $text-color;
-    }   
+    }
   }
   .order-options__message {
     font-size: 19px;
@@ -409,13 +406,13 @@
     margin-left: 64px;
   }
   .order-options__item-title{
-    width: 112px;   
+    width: 112px;
   }
   .order-options__controls {
     width: 700px;
     &--color {
       width: 780px;
-    }  
+    }
   }
   .order-options__field {
     &--color {
@@ -425,7 +422,7 @@
         margin-bottom: 70px;
       }
     }
-  }  
+  }
   .order-options__message {
     padding-bottom: 0;
     padding-right: 0;

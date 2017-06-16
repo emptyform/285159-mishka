@@ -78,7 +78,6 @@
     background-repeat: no-repeat;
     background-position: left top;
     background-size: auto 100%;
-    
   }
   .reviews-wrapper {
     position: relative;
@@ -98,29 +97,29 @@
   .reviews__content {
     width: 668px;
     font-size: 17px;
-    line-height: 30px;    
+    line-height: 30px;
     order:3;
-  }  
+  }
   .reviews__text {
     margin-bottom: 40px;
-  }  
+  }
   .reviews__pages {
     position: absolute;
     margin:0;
     right: 0px;
     bottom: 50px;
     width: 167px;
- } 
+  }
   .reviews__pages-item {
-  border: none;
-  background-color: transparent;
- }
-.reviews__pages-item--prev {
-  background-position: 20% center;  
-}
-.reviews__pages-item--next {
-  margin-left: 0px;
-  background-position: 80% center;
+    border: none;
+    background-color: transparent;
+  }
+  .reviews__pages-item--prev {
+    background-position: 20% center;  
+  }
+  .reviews__pages-item--next {
+    margin-left: 0px;
+    background-position: 80% center;
   }
 }
 @media(min-width:$desktop-width) {
