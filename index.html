@@ -9,53 +9,58 @@
   <body>
     <header class="page-header">
       <h1 class="page-header__title visually-hidden">Интернет магазин милых штучек ручной работы для дома</h1>
-      <div class="page-header__wrapper">
-        <div class="container"> 
-          <div class="page-header__inner">
-            <a class="page-header__logo" title="Mishka" tabindex="0">
-              <img src="img/logo-mobile.svg" width="86" height="36" alt="Mishka">
-            </a>
-          </div>  
-        </div>        
-      </div>
-      
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="catalog.html" title="Каталог товаров" tabindex="0">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item-link" href="form.html" title="Вязание на заказ" tabindex="0">Вязание на заказ</a>
-            </li>
-          </ul>
-          <div class="main-nav__user">
-            <form class="search-field" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="container">
+      <div class="page-header__wrapper">        
+        <div class="page-header__inner">
+          <a class="page-header__logo" title="Mishka" tabindex="0">
+            <img src="img/logo-mobile.svg" width="86" height="36" alt="Mishka">
+          </a>
+        </div> 
+              
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__item-link  " href="catalog.html" title="Каталог товаров" tabindex="0">Каталог товаров</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link  main-nav__item-link--order" href="form.html" title="Вязание на заказ" tabindex="0">Вязание на заказ</a>
+              </li>
+            </ul>
+            <div class="main-nav__user">
+              <form class="search-field" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="search-field__inner">
                   <label class="search-field__label" for="search">Поиск</label>
                   <input class="search-field__input" type="search" name="search" id="search" placeholder="Поиск по сайту">
                   <button class="search-field__button" type="submit" value="Поиск">Поиск</button>
                 </div>
-              </div>
-            </form>
-            <div class="shopping-cart">
-              <div class="container">
+              </form>
+              <div class="shopping-cart">
                 <a class="shopping-cart__link" href="#" title="Корзина" tabindex="0">Корзина
                   <span class="shopping-cart__indicator">пока пуста</span>
                 </a>
               </div>
             </div>
+            <ul class="main-nav__hidden-list">
+              <li class="main-nav__hidden-item">
+                <a class="main-nav__hidden-link" href="#">Новые поступления</a>
+              </li>
+              <li class="main-nav__hidden-item">
+                <a class="main-nav__hidden-link" href="#">Распродажа</a>
+              </li>
+              <li class="main-nav__hidden-item  main-nav__hidden-item--delivery">
+                <a class="main-nav__hidden-link  main-nav__hidden-link--delivery" href="#">Бесплатная доставка по России</a> 
+              </li>                  
+            </ul>                   
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div> 
     </header>
 
     <main>
       <section class="goods">
         <header class="goods__header">
-          <div class="container">
+          <div class="container goods__innner">
             <h2 class="goods__title">Милые штуки ручной работы для дома</h2>
           </div>
         </header>

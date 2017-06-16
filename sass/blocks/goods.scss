@@ -1,8 +1,11 @@
 .goods {
   margin-bottom: 35px;
+  
 }
-.goods__header {
+.goods__innner {
   padding-top: 80px;
+} 
+.goods__header {
   padding-bottom: 127px;
   background-color: $bg-color;
   background-image: url("../img/hero-mobile@1x.jpg");
@@ -64,7 +67,12 @@
 }
 @media (min-width: 768px) {
   .goods {
+    margin-top: -49px;
+    border-top: 1px solid $border-color; 
     margin-bottom: 60px;
+  }
+  .goods__innner {
+    padding-top: 80px;
   }
   .goods__title {
     margin-right: 85px;
@@ -94,7 +102,16 @@
 }
 @media (min-width: 1250px) {
   .goods {
+    margin-top: -49px;
     margin-bottom: 140px;
+    border-top: none; 
+  }
+  .goods__innner {
+    width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px; 
+    margin: 0 auto;
+    border-top: 1px solid $border-color; 
   }
   .goods__title {
     margin-right: 199px;
