@@ -44,6 +44,10 @@
   }
 }
 @media(min-width:$desktop-width) {
+  .heading {
+    margin-top: -49px;
+    border-top: 1px solid $border-color; 
+  }
   .heading__inner {
     padding-top: 70px;
     padding-bottom: 96px;

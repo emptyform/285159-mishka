@@ -1,5 +1,3 @@
-.catalog {
-  }
 .catalog__header {
   background-color: $bg-color-second;
   margin-bottom: 30px;
@@ -72,6 +70,10 @@
   margin-top: 22px;
 }
 @media(min-width:$tablet-width) {
+  .catalog {
+    margin-top: -49px;
+    border-top: 1px solid $border-color; 
+  }
   .catalog__header {
     margin-bottom: 80px;
   }
@@ -136,7 +138,7 @@
 @media(min-width:$desktop-width) {
   .catalog__header {
     margin-bottom: 130px;
-  }
+  }  
   .catalog__title {
     padding-left: 300px;
     font-size: 53px;

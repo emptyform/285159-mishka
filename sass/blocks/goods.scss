@@ -65,7 +65,7 @@
     background-position: 95% center;
   }
 }
-@media (min-width: 768px) {
+@media (min-width:$tablet-width) {
   .goods {
     margin-top: -49px;
     border-top: 1px solid $border-color; 
@@ -100,7 +100,7 @@
     padding-rigth: 189px; 
   }
 }
-@media (min-width: 1250px) {
+@media (min-width:$desktop-width) {
   .goods {
     margin-top: -49px;
     margin-bottom: 140px;
