@@ -1577,7 +1577,7 @@ img {
 
 .map {
   position: relative;
-  width: auto;
+  width: 100%;
   min-height: 457px;
   margin-bottom: 39px;
   background-color: #e7e4dd;
