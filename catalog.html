@@ -130,8 +130,11 @@
             <div class="production-wrapper">
               <h2 class="production__title">Процесс производства</h2>
               <div class="production__video">
-                <img class="production__video-file" src="img/video-mobile@1x.jpg" width="260" height="150" alt="видео">
-                <img class="production__video-play" src="img/icon-play.svg" width="101" height="77" alt="play">
+                <video class="production__video-file" preload="metadata" width="260" height="150"> 
+                  <source src="video.mp4" type="video/mp4">
+                  <source src="video.ogv" type="video/ogg">
+                  <source src="video.webm" type="video/webm">           
+                </video>
               </div>
               <div class="production__inner">
                 <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
