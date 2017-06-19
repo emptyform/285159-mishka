@@ -78,12 +78,14 @@
     margin-bottom: 80px;
   }
   .catalog__title {
+    padding-top: 95px;
+    padding-bottom: 78px;
     padding-left: 150px;
     font-size: 43px;
     line-height: 50px;
   }
   .catalog__inner {
-    margin-bottom: 53px;
+    margin-bottom: 54px;
   }
   .catalog__item {
     margin-bottom: 53px;
@@ -104,22 +106,25 @@
     height: 334px;
   }
   .catalog__item-wrapper {
-    width: 332px;
+    width: 331px;
     padding: 0;
   }
   .catalog__item-inner {
-    margin-left: 30px;
+    margin-left: 24px;
     margin-right: 32px;
-    padding-bottom: 126px;
+    padding-bottom: 170px;
     border-bottom: none;
+    &--basket {
+      padding-bottom: 148px;
+    }
   }
   .catalog__item-name {
-    min-height: 48px;
     font-size: 20px;
     line-height: 24px;
-    margin-top: 30px;
-    margin-bottom: 19px;
-  }
+    margin-top: 26px;
+    margin-bottom: 8px;
+    padding-right: 35px;
+}
   .catalog__item-description {
     font-size: 15px;
     line-height: 30px;
@@ -127,7 +132,7 @@
   .catalog__item-buy {
     margin-left: 32px;
     margin-right: 32px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     border-top: 1px solid $border-color;
   }
   .catalog__item-price {
@@ -140,12 +145,15 @@
     margin-bottom: 130px;
   }
   .catalog__title {
-    padding-left: 300px;
+    padding-left: 296px;
+    padding-top: 92px;
+    padding-bottom: 103px;
     font-size: 53px;
     line-height: 57px;
   }
   .catalog__inner {
     margin-bottom: 56px;
+    
   }
   .catalog__item {
     width: 315px;
@@ -157,8 +165,9 @@
     width: 315px;
   }
   .catalog__item-img {
+    display: block;
     width: 315px;
-    height: 100%;
+    height: 462px;
   }
   .catalog__item-wrapper {
     width: 313px;
@@ -168,9 +177,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
   .catalog__item-inner {
-    padding-bottom: 46px;
+    padding-bottom: 36px;
+    &--basket {
+      padding-bottom: 12px;
+    }
+  }
+  .catalog__item-name {
+    margin-top: 26px;
+    margin-bottom: 6px;
+    padding-right: 20px;
+}
+  .catalog__item-buy {
+    margin-left: 25px;
   }
 }

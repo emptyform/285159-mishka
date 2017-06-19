@@ -121,16 +121,15 @@
 }
 @media(min-width:$desktop-width) {
   .advantages {
-    margin-bottom: 90px;
+    margin-bottom: 29px;
   }
   .advantages__title {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 55px;
   }
   .advantages__list {
     width: 700px;
@@ -141,5 +140,46 @@
     box-sizing: border-box;
     font-size: 20px;
     line-height: 22px;
+  }
+  .advantages-item--quality {
+    padding-top: 60px;
+    padding-bottom: 52px;
+    padding-right: 120px;
+    flex-shrink: 0;
+    order: 0;
+    background-position: 10px 5px;
+  }
+  .advantages-item--price {
+    padding-top: 60px;
+    padding-bottom: 59px;
+    padding-right: 90px;
+    flex-shrink: 0;
+    order: 2;
+  }
+  .advantages-item--feature {
+    padding-top: 52px;
+    padding-bottom: 63px;
+    padding-right: 110px;
+    flex-shrink: 0;
+    order: 4;
+  }
+  .advantages-item--handmade {
+    padding-top: 59px;
+    padding-bottom: 36px;
+    padding-right: 52px;
+    flex-shrink: 0;
+    order: 1;
+  }
+  .advantages-item--produced {
+    padding-top: 59px;
+    padding-bottom: 35px;
+    flex-shrink: 0;
+    order:3;
+  }
+  .advantages-item--package {
+    padding-top: 53px;
+    padding-right: 57px;
+    flex-shrink: 0;
+    order:5;
   }
 }

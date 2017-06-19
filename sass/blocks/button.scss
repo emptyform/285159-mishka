@@ -84,11 +84,15 @@
   .button {
     &--feedback {
       margin-left: 175px;
+      margin-bottom: 0;
     }
     &--make-oder {
       width: 226px;
-      margin-left: 74px;
+      margin-left: 80px;
       text-align: center;
+    }
+    &--reviews {
+      margin-top: 76px;
     }
   }
 }

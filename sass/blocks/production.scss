@@ -1,5 +1,6 @@
 .production {
-  padding-top: 31px;
+  padding-top: 23px;
+  margin-bottom: 59px;
   border: 1px solid $border-color;
 }
 .production__title {
@@ -7,7 +8,7 @@
   margin: 0;
   padding: 0;
   padding-left: 90px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -27,7 +28,7 @@
   position: relative;
   width: 260px;
   height: 150px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   &:before {
     position: absolute;
     content: "";
@@ -59,8 +60,8 @@
   margin: 0;
   padding: 0;
   padding-left: 34px;
-  padding-right: 58px;
-  margin-bottom: 32px;
+  padding-right: 37px;
+  margin-bottom: 24px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -68,7 +69,7 @@
 @media(min-width:$tablet-width) {
   .production {
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 63px;
     border: none;
   }
   .production-wrapper {
@@ -77,9 +78,9 @@
   }
   .production__title {
     margin-bottom: 0;
-    padding-top: 40px;
+    padding-top: 36px;
     padding-bottom: 35px;
-    padding-left: 100px;
+    padding-left: 108px;
     border-top: 1px solid $border-color;
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
@@ -107,6 +108,7 @@
     height: 455px;
   }
   .production__inner {
+    padding-bottom: 45px;
     border-bottom: 1px solid $border-color;
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
@@ -117,13 +119,13 @@
     padding-right: 44px;
     font-size: 15px;
     line-height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 }
 @media(min-width:$desktop-width) {
   .production {
     width: 1050px;
-    margin-bottom: 106px;;
+    margin-bottom: 128px;
   }
   .production-wrapper {
     position: relative;
@@ -151,8 +153,8 @@
     margin: 0;
     padding: 0;
     margin-left: 681px;
-    padding-bottom: 42px;
-    padding-top: 100px;
+    padding-bottom: 34px;
+    padding-top: 95px;
     padding-left: 78px;
     padding-right: 138px;
     &::before {
@@ -169,6 +171,6 @@
     min-height: 120px;
     margin-bottom: 0;
     padding-left: 78px;
-    padding-bottom: 50px;
+    padding-bottom: 43px;
   }
 }

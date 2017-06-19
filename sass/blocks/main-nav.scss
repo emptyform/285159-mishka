@@ -123,19 +123,20 @@
     order: -3;
   }
   .main-nav__item {
+    width: 185px;
     &:last-of-type {
       border-left: 1px solid $border-color;
     }
   }
   .main-nav__item-link {
-    width: 183px;
-    padding-top: 35px;
+    display: block;
+    padding-top: 30px;
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
     &--order {
-      width: 230px;
-      padding-left: 35px;
+      width: 260px;
+      padding-left: 34px;
       padding-right: 35px;
     }
   }

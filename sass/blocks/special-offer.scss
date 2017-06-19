@@ -163,7 +163,7 @@
 @media(min-width:$desktop-width) {
   .special-offer {
     padding-bottom: 69px;
-    margin-bottom: 65px;
+    margin-bottom: 86px;
   }
   .special-offer__inner {
     position: relative;
@@ -176,13 +176,14 @@
     position: relative;
     width: auto;
     order: 2;
-    margin-bottom: 55px;
+    margin-bottom: 10px;
     font-size: 53px;
     line-height: 57px;
     background-color: transparent;
     z-index: 2;
   }
   .special-offer__detail {
+    margin-top: 15px;
     margin-left: 46px;
     margin-right: 56px;
   }
@@ -196,16 +197,16 @@
     margin-right: 58px;
   }
   .special-offer__text {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
   .special-offer__specification {
-    margin-bottom: 74px;
+    margin-bottom: 108px;
   }
   .special-offer__img {
     position: absolute;
     width: 525px;
     height: 635px;
-    top: -40px;
+    top: -50px;
     right: 0px;
   }
   .special-offer__img img {

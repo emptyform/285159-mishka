@@ -114,19 +114,19 @@
   }
   .contacts__title {
     padding-right: 50px;
-    margin-top: 70px;
+    margin-top: 69px;
     margin-left: 175px;
-    margin-bottom: 67px;
+    margin-bottom: 48px;
     position: relative;
-    font-size: 43px;
-    line-height: 50px;
+    font-size: 53px;
+    line-height: 57px;
     &::before {
       position: absolute;
       content: "";
       width: 50px;
       height: 81px;
-      top: -14px;
-      left: -80px;
+      top: -9px;
+      left: -108px;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
     }
@@ -135,7 +135,7 @@
     display: table;
     width: 301px;
     margin-left: 175px;
-    margin-bottom: 40px;
+    margin-bottom: 77px;
   }
   .contacts__information tbody {
     flex-direction: column;
