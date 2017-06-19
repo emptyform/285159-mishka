@@ -68,15 +68,18 @@
   .goods {
     margin-top: -49px;
     border-top: 1px solid $border-color;
-    margin-bottom: 60px;
+    margin-bottom: 46px;
+  }
+  .goods__header {
+    padding-bottom: 122px;
   }
   .goods__innner {
-    padding-top: 80px;
+    padding-top: 152px;
   }
   .goods__title {
     margin-right: 85px;
     margin-left: 85px;
-    margin-bottom: 380px;
+    margin-bottom: 251px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -86,8 +89,8 @@
     margin: 0 auto;
   }
   .goods__item {
-    padding-top: 35px;
-    padding-bottom: 30px;
+    padding-top: 3px;
+    padding-bottom: 0px;
     font-size: 20px;
     line-height: 30px;
   }

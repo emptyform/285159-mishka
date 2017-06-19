@@ -55,9 +55,9 @@
 @media(min-width:$tablet-width) {
   .button {
     &--reviews {
-    width: 176px;
+    width: 171px;
     align-self: flex-start;
-    margin-top: 90px;
+    margin-top: 79px;
     margin-left: auto;
     font-size: 17px;
     line-height: 20px;
@@ -67,6 +67,8 @@
     &--feedback {
       width: 226px;
       margin-bottom: 56px;
+      font-size: 17px;
+      line-height: 20px;
     }
     &--make-oder {
       margin-left: 42px;

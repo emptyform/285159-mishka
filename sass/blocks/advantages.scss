@@ -62,7 +62,7 @@
     margin-bottom: 23px;
   }
   .advantages__title {
-    margin-bottom: 52px;
+    margin-bottom: 45px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -79,39 +79,42 @@
   }
   .advantages-item--quality {
     padding-top: 60px;
-    padding-bottom: 32px;
-    padding-right: 6px;
+    padding-bottom: 52px;
+    padding-right: 103px;
     flex-shrink: 0;
     order: 0;
+    background-position: 10px 5px;
   }
   .advantages-item--price {
     padding-top: 60px;
-    padding-bottom: 35px;
+    padding-bottom: 59px;
+    padding-right: 71px;
     flex-shrink: 0;
     order: 2;
   }
   .advantages-item--feature {
     padding-top: 52px;
-    padding-bottom: 35px;
+    padding-bottom: 63px;
+    padding-right: 94px;
     flex-shrink: 0;
     order: 4;
   }
   .advantages-item--handmade {
-    padding-top: 56px;
-    padding-bottom: 35px;
+    padding-top: 59px;
+    padding-bottom: 36px;
+    padding-right: 35px;
     flex-shrink: 0;
     order: 1;
   }
   .advantages-item--produced {
-    padding-top: 55px;
+    padding-top: 59px;
     padding-bottom: 35px;
     flex-shrink: 0;
     order:3;
   }
   .advantages-item--package {
-    padding-top: 55px;
-    padding-bottom: 0px;
-    padding-right: 2px;
+    padding-top: 53px;
+    padding-right: 45px;
     flex-shrink: 0;
     order:5;
   }

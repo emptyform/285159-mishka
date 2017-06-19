@@ -32,9 +32,9 @@
   width: 320px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  margin-top: 25px;
+  padding-bottom: 28px;
+  padding-left: 74px;
   padding-right: 30px;
   box-sizing: border-box;
   color: $text-color;
@@ -42,7 +42,6 @@
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
-  text-align: center;
   &[href]:hover {
     color: rgba($text-color, 0.6);
     cursor: pointer;
