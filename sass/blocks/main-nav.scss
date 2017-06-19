@@ -18,42 +18,6 @@
   background-color: transparent;
   background-repeat: no-repeat;
 }
-.main-nav--closed .main-nav__toggle {
-  background-image: url("../img/icon-menu-open.svg");
-}
-.main-nav--opened .main-nav__toggle {
-  background-image: url("../img/icon-menu-close.svg");
-}
-@media (max-width: $mobile-widths-only) {
-  .main-nav--closed .main-nav__item {
-    display: none;
-  }
-  .main-nav--closed .main-nav__user {
-    display: none;
-  }
-  .main-nav--opened .main-nav__wrapper {
-    width: 100%;
-    position: absolute;
-    top: 81px;
-    left: center;
-    z-index: 10;
-    background-color: $bg-color;
-  }
-  .main-nav--nojs .main-nav__wrapper {
-    width: 100%;
-    position: static;
-    height: auto;
-  }
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-  .main-nav--nojs  .main-nav__item {
-    display: block;
-  }
-  .main-nav--nojs .main-nav__user {
-    display: block;
-  }
-}
 .main-nav__list,
 .main-nav__hidden-list {
   margin: 0;

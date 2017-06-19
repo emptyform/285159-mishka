@@ -1,16 +1,19 @@
 .special-offer {
   padding-bottom: 42px;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   background-color: $bg-color;
   color: $text-color;
   background-image: url("../img/zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: bottom;
 }
+.special-offer__header {
+  margin-bottom: 23px;
+}
 .special-offer__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -23,6 +26,7 @@
   line-height: 20px;
   font-weight: 700;
   color: $color-second;
+  text-transform: uppercase;
 }
 .special-offer__contetns {
   display: flex;
@@ -31,7 +35,7 @@
 .special-offer__text {
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
@@ -39,7 +43,7 @@
 }
 .special-offer__specification {
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
@@ -48,19 +52,19 @@
   border-bottom: 1px solid #ececec;
 }
 .special-offer__parameter {
-  padding-top: 15px;
-  padding-bottom: 12px;
-  padding-right: 0px;
+  padding-top: 14px;
+  padding-bottom: 6px;
+  padding-right: 12px;
   text-align: left;
 }
 .special-offer__value {
-  padding-top: 15px;
-  padding-bottom: 12px;
+  padding-top: 14px;
+  padding-bottom: 6px;
 }
 .special-offer__img {
   margin: 0px;
   padding: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 .special-offer__img img {
   display: block;
@@ -72,7 +76,7 @@
 }
 .special-offer__price {
   align-self: center;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
