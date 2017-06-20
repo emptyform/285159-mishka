@@ -137,6 +137,9 @@
     border: none;
     border-bottom: 2px solid $text-color;
   }
+  &:focus {
+    outline: none;
+  }
 }
 .order-options__label {
   display: block;
@@ -465,7 +468,7 @@
   .order-options__field {
     &--color {
       width: 261px;
-      margin-right: 5px;
+      margin-right: 1px;
       &:last-of-type {
         margin-bottom: 70px;
       }
