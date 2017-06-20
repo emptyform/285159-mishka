@@ -8,16 +8,18 @@
     <base href="https://htmlacademy-adaptive.github.io/285159-mishka/5/">
 </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--menu-closed page-header--menu-nojs">
+      <h1 class="page-header__title visually-hidden">Интернет магазин милых штучек ручной работы для дома</h1>
       <div class="page-header__wrapper">
         <div class="page-header__inner">
           <a class="page-header__logo" href="index.html" title="Mishka" tabindex="0">
             <img src="img/logo-mobile.svg" width="86" height="36" alt="Mishka">
           </a>
+          <button class="page-header__toggle" type="button">Открыть меню</button>
         </div>
 
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav">
+
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -78,7 +80,7 @@
                   <span class="catalog__item-description">Рост 30 см, вес 200 г</span>
                 </div>
                 <div class="catalog__item-buy">
-                  <span class="catalog__item-price">1200 руб.</span>
+                  <span class="catalog__item-price">1 200 руб.</span>
                   <a class="catalog__item-to-oder" href="#" title="Добавить в корзину" tabindex="0">
                     <img src="img/icon-cart.svg" width="21" height="19" alt="Добавить в корзину">
                   </a>
@@ -111,14 +113,14 @@
                 <img class="catalog__item-img" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
               </a>
               <div class="catalog__item-wrapper">
-                <div class="catalog__item-inner">
+                <div class="catalog__item-inner  catalog__item-inner--basket">
                   <h2 class="catalog__item-name">
                     <a class="catalog__item-link" href="#" title="Большая корзинка для игрушек">Большая корзинка для игрушек</a>
                   </h2>
                   <span class="catalog__item-description">Диаметр 30 см, высота 30 см</span>
                 </div>
                 <div class="catalog__item-buy">
-                  <span class="catalog__item-price">1500 руб.</span>
+                  <span class="catalog__item-price">1 500 руб.</span>
                   <a class="catalog__item-to-oder" href="#" title="Добавить в корзину" tabindex="0">
                     <img src="img/icon-cart.svg" width="21" height="19" alt="Добавить в корзину">
                   </a>
@@ -184,6 +186,6 @@
     </div>
 
     <script src="js/open-windows.js"></script>
-    <script src="js/open-choose-size.js"></script>>
+    <script src="js/open-choose-size.js"></script>
   </body>
 </html>

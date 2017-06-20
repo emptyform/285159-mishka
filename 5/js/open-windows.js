@@ -1,20 +1,20 @@
-var menu = document.querySelector(".main-nav");
-var toggle = document.querySelector(".main-nav__toggle");
+var menu = document.querySelector(".page-header");
+var toggle = document.querySelector(".page-header__toggle");
 
 var openModal = document.querySelector(".button--order");
 var modalWindow = document.querySelector(".modal");
 var overlay = document.querySelector(".modal-overlay");
 
 
-menu.classList.remove("main-nav--nojs");
+menu.classList.remove("page-header--menu-nojs");
 
 toggle.addEventListener("click", function () {
-  if (menu.classList.contains("main-nav--closed")) {
-      menu.classList.remove("main-nav--closed");
-      menu.classList.add("main-nav--opened");
+  if (menu.classList.contains("page-header--menu-closed")) {
+      menu.classList.remove("page-header--menu-closed");
+      menu.classList.add("page-header--menu-opened");
   } else {
-    menu.classList.add("main-nav--closed");
-    menu.classList.remove("main-nav--opened");
+    menu.classList.add("page-header--menu-closed");
+    menu.classList.remove("page-header--menu-opened");
   }
 });
 
