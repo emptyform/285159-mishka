@@ -1,3 +1,6 @@
+.contacts {
+  margin-bottom: 38px;
+}
 .contacts-wrapper {
   width: 260px;
   padding-left: 30px;
@@ -7,27 +10,30 @@
 .contacts__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 }
 .contacts__information {
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 36px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
   color: $color-third;
 }
+.contacts__date {
+}
 .contacts__parameter {
   width: 78px;
+  padding-bottom: 30px;
   vertical-align: top;
 }
 .contacts__value {
   vertical-align: top;
   &--email{
-    padding-bottom: 35px;
+    padding-bottom: 30px;
   }
 }
 .contacts__link {
@@ -48,6 +54,9 @@
   }
 }
 @media(min-width:$tablet-width) {
+  .contacts {
+    margin-bottom: 0px;
+  }
   .contacts-wrapper {
     position: relative;
     width: 668px;
@@ -55,7 +64,7 @@
     padding-right: 50px;
   }
   .contacts__title {
-    margin-bottom: 67px;
+    margin-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
     &::before {
@@ -63,7 +72,7 @@
       content: "";
       width: 50px;
       height: 81px;
-      top: 0px;
+      top: -15px;
       right: 50px;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
@@ -73,7 +82,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 56px;
+    margin-bottom: 54px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -83,7 +92,7 @@
     flex-wrap: wrap;
   }
   .contacts__date {
-    margin-right: 65px;
+    margin-right: 50px;
     &:last-of-type{
       margin-right: 0px;
     }
@@ -108,19 +117,19 @@
   }
   .contacts__title {
     padding-right: 50px;
-    margin-top: 70px;
+    margin-top: 69px;
     margin-left: 175px;
-    margin-bottom: 67px;
+    margin-bottom: 48px;
     position: relative;
-    font-size: 43px;
-    line-height: 50px;
+    font-size: 53px;
+    line-height: 57px;
     &::before {
       position: absolute;
       content: "";
       width: 50px;
       height: 81px;
-      top: -14px;
-      left: -80px;
+      top: -9px;
+      left: -108px;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
     }
@@ -129,7 +138,7 @@
     display: table;
     width: 301px;
     margin-left: 175px;
-    margin-bottom: 40px;
+    margin-bottom: 77px;
   }
   .contacts__information tbody {
     flex-direction: column;

@@ -1,11 +1,14 @@
 .page-header {
-  position: relative;
+  border-bottom: 1px solid #ececec;
   color: $text-color;
 }
 .page-header__wrapper {
-  border-bottom: 1px solid #ececec;
 }
 .page-header__inner {
+  position: relative;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 22px;
   padding-bottom: 22px;
 }
@@ -29,6 +32,54 @@
   width: 86px;
   height: 36px;
 }
+.page-header__toggle {
+  position: absolute;
+  top: 32px;
+  right: 0px;
+  z-index: 2;
+  display: block;
+  width: 21px;
+  height: 21px;
+  font-size: 0px;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+.page-header--menu-closed .page-header__toggle {
+  background-image: url("../img/icon-menu-open.svg");
+}
+.page-header--menu-opened .page-header__toggle {
+  background-image: url("../img/icon-menu-close.svg");
+}
+@media (max-width: $mobile-widths-only) {
+  .page-header--menu-closed .main-nav__item {
+    display: none;
+  }
+  .page-header--menu-closed .main-nav__user {
+    display: none;
+  }
+  .page-header--menu-opened .main-nav__wrapper {
+    width: 100%;
+    position: absolute;
+    top: 81px;
+    left: center;
+    z-index: 10;
+    background-color: $bg-color;
+  }
+  .page-header--menu-nojs .main-nav__wrapper {
+    width: 100%;
+    position: static;
+    height: auto;
+  }
+  .page-header--menu-nojs  .main-nav__item {
+    display: block;
+  }
+  .page-header--menu-nojs .main-nav__user {
+    display: block;
+  }
+}
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     position: relative;
@@ -40,11 +91,18 @@
   }
   .page-header__inner {
     padding: 0;
-}
-  .page-header__logo {
+    margin: 0;
+    width: 0;
     position: absolute;
     top: 22px;
     left: 50px;
+    width: 114px;
+    height: 46px;
+  }
+  .page-header__toggle {
+    display: none;
+  }
+  .page-header__logo {
     width: 114px;
     height: 46px;
   }
@@ -54,11 +112,15 @@
     background-color: transparent;
     width: 1050px;
   }
-  .page-header__logo {
+  .page-header__inner {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     margin: 0 auto;
+    width: 149px;
+    height: 72px;
+  }
+  .page-header__logo {
     width: 149px;
     height: 72px;
   }

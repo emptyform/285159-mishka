@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--menu-closed page-header--menu-nojs">
+      <h1 class="page-header__title visually-hidden">Интернет магазин милых штучек ручной работы для дома</h1>
       <div class="page-header__wrapper">
         <div class="page-header__inner">
           <a class="page-header__logo" href="index.html" title="Mishka" tabindex="0">
             <img src="img/logo-mobile.svg" width="86" height="36" alt="Mishka">
           </a>
+          <button class="page-header__toggle" type="button">Открыть меню</button>
         </div>
 
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav">
+
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -48,7 +50,7 @@
                 <a class="main-nav__hidden-link" href="#">Распродажа</a>
               </li>
               <li class="main-nav__hidden-item  main-nav__hidden-item--delivery">
-                <a class="main-nav__hidden-link  main-nav__hidden-link--delivery" href="#">Бесплатная доставка по России</a>
+                <a class="main-nav__hidden-link  main-nav__hidden-link--delivery">Бесплатная доставка по России</a>
               </li>
             </ul>
           </div>
@@ -127,7 +129,7 @@
           <fieldset class="order-options__item  order-options__item--name">
             <div class="container">
               <div class="order-options__item-wrapper">
-                <div class="order-options__item-title"><span>ФИО</span></div>
+                <div class="order-options__item-title  order-options__item-title--name"><span>ФИО</span></div>
                 <div class="order-options__controls">
                   <div class="order-options__field  order-options__field--text">
                     <label class="order-options__label  order-options__label--text" for="name">Имя:</label>
@@ -149,10 +151,10 @@
           <fieldset class="order-options__item  order-options__item--phone">
             <div class="container">
               <div class="order-options__item-wrapper">
-                <div class="order-options__item-title"><span>Тел</span></div>
+                <div class="order-options__item-title order-options__item-title--phone"><span>Тел</span></div>
                 <div class="order-options__controls">
-                  <div class="order-options__field  order-options__field--phone  order-options__field--underline">
-                    <input class="order-options__input  order-options__input--text" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
+                  <div class="order-options__field  order-options__field--phone  ">
+                    <input class="order-options__input  order-options__input--contacts" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
                   </div>
                 </div>
               </div>
@@ -162,10 +164,10 @@
           <fieldset class="order-options__item  order-options__item--email">
             <div class="container">
               <div class="order-options__item-wrapper">
-                <div class="order-options__item-title"><span>E-mail</span></div>
+                <div class="order-options__item-title  order-options__item-title"><span>E-mail</span></div>
                 <div class="order-options__controls">
-                  <div class="order-options__field  order-options__field--email  order-options__field--underline">
-                    <input class="order-options__input order-options__input--text" type="email" name="email" placeholder="Ваш Email*" required>
+                  <div class="order-options__field  order-options__field--email">
+                    <input class="order-options__input order-options__input--contacts" type="email" name="email" placeholder="Ваш Email*" required>
                   </div>
                 </div>
               </div>

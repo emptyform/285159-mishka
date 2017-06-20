@@ -1,6 +1,6 @@
 .button {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 14px;
   border: 2px solid $color-third;
   font-size: 17px;
   line-height: 20px;
@@ -9,6 +9,7 @@
   background-color: $bg-color;
   box-shadow: none;
   text-decoration: none;
+  text-transform: uppercase;
   &:hover {
     color: $text-color-contrast;
     background-color: $color-third;
@@ -25,6 +26,8 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-size: 18px;
+    line-height: 20px;
   }
   &--submit {
     display: block;
@@ -52,9 +55,9 @@
 @media(min-width:$tablet-width) {
   .button {
     &--reviews {
-    width: 176px;
+    width: 171px;
     align-self: flex-start;
-    margin-top: 90px;
+    margin-top: 79px;
     margin-left: auto;
     font-size: 17px;
     line-height: 20px;
@@ -64,13 +67,15 @@
     &--feedback {
       width: 226px;
       margin-bottom: 56px;
+      font-size: 17px;
+      line-height: 20px;
     }
     &--make-oder {
       margin-left: 42px;
       width: 580px;
     }
     &--sent-order {
-      width: 226px;
+      width: 230px;
       line-height: 17px;
     }
   }
@@ -79,11 +84,15 @@
   .button {
     &--feedback {
       margin-left: 175px;
+      margin-bottom: 0;
     }
     &--make-oder {
       width: 226px;
-      margin-left: 74px;
+      margin-left: 80px;
       text-align: center;
+    }
+    &--reviews {
+      margin-top: 76px;
     }
   }
 }

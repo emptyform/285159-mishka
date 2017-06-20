@@ -4,9 +4,14 @@
 .shopping-cart__link {
   position: relative;
   display: block;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 45px;
+  padding-right: 10px;
+  margin-top: 24px;
+  margin-bottom: 29px;
+  box-sizing: border-box;
   color: $text-color;
   font-size: 17px;
   line-height: 24px;
@@ -17,12 +22,15 @@
     content: "";
     width: 21px;
     height: 18px;
-    top: 0px;
+    top: 4px;
     left: 0px;
     background-color: $bg-color;
     background-image: url("../img/icon-cart.svg");
     opacity: 0.2;
   }
+}
+.shopping-cart__indicator {
+  padding-left: 5px;
 }
 @media (min-width: $tablet-width ) {
   .shopping-cart {
@@ -34,8 +42,11 @@
     margin: 0;
     margin-left:32px;
     padding-left: 52px;
-    margin-top: 36px;
+    margin-top: 30px;
   }
 }
 @media(min-width:$desktop-width) {
+  .shopping-cart__link {
+    margin-left: 29px;
+  }
 }

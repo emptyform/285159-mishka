@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 457px;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
   background-color: #e7e4dd;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -19,6 +19,12 @@
     margin-top: -50px;
     background-image: url("../img/icon-map-pin.svg");
     background-repeat: no-repeat;
+  }
+}
+@media(min-width:$tablet-width) {
+  .map {
+    min-height: 457px;
+    margin-bottom: 54px;
   }
 }
 @media(min-width:$desktop-width) {

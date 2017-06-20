@@ -1,9 +1,14 @@
 .search-field {
-  padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 .search-field__inner {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 30px;
+  box-sizing: border-box;
   position: relative;
 }
 .search-field__input[type="search"] {
@@ -32,7 +37,7 @@
   position: absolute;
   width: 18px;
   height: 19px;
-  top: 5px;
+  top: 32px;
   left: 2px;
   font-size: 0px;
   background-color: $bg-color;
@@ -49,16 +54,26 @@
 }
 @media (min-width: $tablet-width) {
   .search-field {
-    width: 82px;
+    width: 80px;
     padding: 0;
     margin: 0;
-    margin-left: 320px;
+    margin-left: 321px;
     border: none;
     border-left: 1px solid $border-color;
     text-align: center;
   }
+  .search-field__inner {
+    width: 80px;
+  }
   .search-field__label {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
   .search-field__input {
     display: none;
@@ -67,8 +82,11 @@
     position: static;
     margin-top: 36px;
     margin-bottom:  33px;
+    margin-left: 30px;
   }
 }
 @media(min-width:$desktop-width) {
-  margin-left: 0;
+  .search-field {
+    width: 82px;
+  }
 }
