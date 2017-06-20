@@ -11,7 +11,7 @@
   padding-right: 10px;
   margin-top: 24px;
   margin-bottom: 29px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   color: $text-color;
   font-size: 17px;
   line-height: 24px;
@@ -30,8 +30,7 @@
   }
 }
 .shopping-cart__indicator {
-  padding-left: 5px; 
-  
+  padding-left: 5px;  
 }
 @media (min-width: $tablet-width ) {
   .shopping-cart {

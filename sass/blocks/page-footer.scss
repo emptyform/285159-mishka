@@ -1,5 +1,4 @@
 .page-footer {
-  
   background-color: $bg-color-second;
 }
 .page-footer__logo {
@@ -23,14 +22,14 @@
   padding-bottom: 26px;
 }
 .page-footer__title {
-   position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .page-footer__copyright {
   display: flex;
@@ -58,7 +57,6 @@
 }
 @media (min-width: $tablet-width) {
   .page-footer {
-  
   }
   .page-footer__wrapper {
     min-height: 143px;
