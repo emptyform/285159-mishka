@@ -55,17 +55,18 @@
   height: 50px;
   font-size: 0px;
   border: 1px solid $border-color;
-  background-color: $bg-color;
-  background-repeat: no-repeat;
+}
+.reviews__pages-item-icon {
+  fill: $text-color;
+  margin-top: 12px;
+  margin-left: 39px;
   &:hover {
+    opacity: 0.6;
   }
   &:active {
+    opacity: 0.3;
   }
-}
-.reviews__pages-item--prev {
-  background-image: url("../img/icon-left-arrow.svg");
-  background-position: 50% center;
-}
+}  
 .reviews__pages-item--next {
   margin-left: -1px;
   background-image: url("../img/icon-right-arrow.svg");
