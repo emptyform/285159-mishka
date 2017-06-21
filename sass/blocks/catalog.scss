@@ -69,6 +69,18 @@
 .catalog__item-to-oder {
   margin-top: 22px;
 }
+.catalog__item-to-oder-icon {
+  fill: $color-fill;
+  opacity: 0.2;
+}
+.catalog__item-to-oder:hover .catalog__item-to-oder-icon {
+  fill: $color-icon;  
+  opacity: 1;
+}
+.catalog__item-to-oder:active .catalog__item-to-oder-icon {
+  fill: $color-icon;  
+  opacity: 0.3;
+}
 @media(min-width:$tablet-width) {
   .catalog {
     margin-top: -49px;

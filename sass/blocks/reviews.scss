@@ -74,6 +74,7 @@
 }
 @media(min-width:$tablet-width) {
   .reviews {
+    position: relative;
     margin-bottom: 146px;
     padding-bottom: 0;
     background-image: url("../img/review@1x.jpg");
@@ -139,7 +140,10 @@
   .reviews {
     margin-bottom: 162px;
     background:none;
-  }
+    &::after {
+      display: none;
+    }
+  }     
   .reviews-wrapper {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -168,6 +172,6 @@
   }
   .reviews__pages {
     bottom: 99px;
-    right: 0;
+    right: 27px;
   }
 }

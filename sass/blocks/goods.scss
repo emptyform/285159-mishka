@@ -8,7 +8,7 @@
   padding-bottom: 122px;
   background-color: $bg-color;
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: center 25%;
+  background-position: center 7%;
   background-repeat: no-repeat;
   background-size: cover;
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -67,13 +67,13 @@
     width: 42px;
     height: 63px;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 84px;
   }
   &--toys {
     width: 62px;
     height: 62px;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 68px;
   }    
 }
 .goods__item:hover .goods__item-icon {
@@ -111,9 +111,20 @@
     line-height: 50px;
   }
   .goods__list {
+    position: relative;
     flex-direction: row;
     width: 668px;
     margin: 0 auto;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 18px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x; 
+      background-size: contain;
+    }
   }
   .goods__item {
     padding-top: 3px;
@@ -155,14 +166,25 @@
   }
   .goods__title {
     margin-right: 199px;
-    margin-left: 199px;
+    margin-left: 214px;
     margin-bottom: 239px;
     font-size: 53px;
     line-height: 57px;
   }
   .goods__list {
+    position: relative;
     width: 1050px;
     margin: 0 auto;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      width: 100%;
+      height: 27px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x; 
+      background-position: 20px;
+    }
   }
   .goods__item {
     padding-top: 3px;
