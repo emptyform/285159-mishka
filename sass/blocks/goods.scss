@@ -95,7 +95,7 @@
   .goods__header {
     padding-bottom: 122px;
     background-image: url("../img/hero-desktop@1x.jpg");
-    background-position: center 20%;
+    background-position: center -40%;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
     }
@@ -116,14 +116,15 @@
     width: 668px;
     margin: 0 auto;
     &::after {
-      content: "";
       position: absolute;
-      bottom: 0;
+      content: "";
+      bottom: -15px;
       width: 100%;
-      height: 18px;
+      height: 24px;
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x; 
+      background-repeat: repeat-x;
       background-size: contain;
+      background-position-x: 37px;   
     }
   }
   .goods__item {
@@ -136,18 +137,23 @@
     }
   }
   .goods__item-inner {
-    width: 262px;
-    padding: 0 36px;
+    width: 266px;
+    padding-left: 36px;
+    padding-right: 33px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .goods__item-name {
     width: 130px;
   }
   .goods__item-icon {
     &--interior {
+      margin-top: 27px;
       margin-left: 90px;
     }
     &--toys {
-      margin-left: 70px;
+      margin-top: 25px;
+      margin-left: 74px;
     }
   }  
 }
@@ -156,6 +162,9 @@
     margin-top: -49px;
     margin-bottom: 123px;
     border-top: none;
+  }
+  .goods__header {
+    padding-bottom: 123px;
   }
   .goods__innner {
     width: 1050px;
@@ -176,14 +185,9 @@
     width: 1050px;
     margin: 0 auto;
     &::after {
-      content: "";
-      position: absolute;
-      bottom: -14px;
-      width: 100%;
-      height: 27px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x; 
-      background-position: 20px;
+      bottom: -19px;
+      height: 34px;
+      background-position-x: 0px; 
     }
   }
   .goods__item {
@@ -211,14 +215,14 @@
     &--interior {
       width: 42px;
       height: 63px;
-      margin-top: 20px;
-      margin-left: 50px;
+      margin-top: 26px;
+      margin-left: 270px;
     }
     &--toys {
       width: 62px;
       height: 62px;
-      margin-top: 20px;
-      margin-left: 50px;
+      margin-top: 25px;
+      margin-left: 251px;
     }
   }
 }

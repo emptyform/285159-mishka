@@ -84,21 +84,15 @@
     width: 102px;
     height: 34px;
   }
-  .page-footer__logo-mishka {
+  .page-footer__logo-icon {
     fill: #231f20;
   }
-  .page-footer__logo:hover .page-footer__logo-mishka {
+  .page-footer__logo[href]:hover .page-footer__logo-icon {
     fill: $color-hover; 
-    &--current {
-      fill: #231f20;
-    }
   }
-  .page-footer__logo:active .page-footer__logo-mishka {
+  .page-footer__logo[href]:active .page-footer__logo-icon {
+    fill: $color-hover;
     opacity: 0.3;
-    &--current {
-      fill: #231f20;
-      opacity: 1;
-    }
   }
   .page-footer__social {
     border: none;
