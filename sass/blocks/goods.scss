@@ -74,7 +74,7 @@
     height: 62px;
     margin-top: 20px;
     margin-left: 68px;
-  }    
+  }
 }
 .goods__item:hover .goods__item-icon {
   fill: #149080;
@@ -124,7 +124,7 @@
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: contain;
-      background-position-x: 37px;   
+      background-position-x: 37px;
     }
   }
   .goods__item {
@@ -155,7 +155,7 @@
       margin-top: 25px;
       margin-left: 74px;
     }
-  }  
+  }
 }
 @media (min-width:$desktop-width) {
   .goods {
@@ -187,7 +187,7 @@
     &::after {
       bottom: -19px;
       height: 34px;
-      background-position-x: 0px; 
+      background-position-x: 0px;
     }
   }
   .goods__item {
@@ -207,7 +207,7 @@
     box-sizing: border-box;
   }
   .goods__item-name {
-    width: 140px;    
+    width: 140px;
   }
   .goods__item-icon {
     fill: #149080;

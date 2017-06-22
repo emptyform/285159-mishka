@@ -10,7 +10,7 @@
     background-image: url("../../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: contain;
-    background-position-x: 8px;    
+    background-position-x: 8px;
   }
 }
 .reviews-wrapper {
@@ -78,7 +78,7 @@
   &:active {
     opacity: 0.3;
   }
-}  
+}
 .reviews__pages-item--next {
   margin-left: -1px;
   background-image: url("../img/icon-right-arrow.svg");
@@ -160,7 +160,7 @@
     &::after {
       display: none
     }
-  }     
+  }
   .reviews-wrapper {
     position: relative;
     background-image: url("../img/review@1x.jpg");
