@@ -31,8 +31,20 @@
     border-top: 1px solid $border-color;
   }
   .heading__inner {
+    position: relative;
     padding-top: 91px;
     padding-bottom: 80px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 24px;
+      bottom: -16px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+      background-position-x: 5px;   
+    }
   }
   .heading__title {
     font-size: 43px;
@@ -52,10 +64,15 @@
   }
   .heading__inner {
     padding-top: 93px;
-    padding-bottom: 96px;
+    padding-bottom: 97px;
+    &::after {
+      height: 34px;
+      bottom: -20px;
+      background-position-x: 11px;   
+    }
   }
   .heading__description {
-    padding-top: 130px;
+    padding-top: 128px;
     padding-bottom: 72px;
   }
   .heading__title {
