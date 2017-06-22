@@ -19,7 +19,7 @@
   width: 145px;
   margin: 0 auto;
   padding-top: 23px;
-  padding-bottom: 26px;
+  padding-bottom: 29px;
 }
 .page-footer__title {
   position: absolute;
@@ -38,22 +38,36 @@
 .page-footer__copyright-title {
   margin: 0;
   padding: 0;
-  margin-top: 26px;
+  margin-top: 20px;
   margin-left: 39px;
   margin-right: 29px;
+  margin-bottom: 23px;
   font-size: 19px;
   line-height: 19px;
   font-weight: 700;
+  color: $text-color;
+  text-decoration: none;
 }
 .page-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
   width: 27px;
   height: 34px;
-  margin-top: 33px;
-  margin-bottom: 23px;
+  margin-top: 0;
+  margin-left: 25px;
   font-size: 0px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
+  }
+.page-footer__academy-icon {
+  fill: $color-icon;
+}
+.page-footer__copyright-title:hover .page-footer__academy-icon {
+  fill: $color-icon-hover;
+}
+.page-footer__copyright-title:active {
+  opacity: 0.3;
+}
+.page-footer__copyright-title:active .page-footer__academy-icon{
+  fill: $color-icon-hover;
 }
 @media (min-width: $tablet-width) {
   .page-footer {
@@ -66,9 +80,19 @@
   }
   .page-footer__logo {
     display: block;
-    margin-right: 158px;
+    margin-right: 161px;
     width: 102px;
     height: 34px;
+  }
+  .page-footer__logo-icon {
+    fill: #231f20;
+  }
+  .page-footer__logo[href]:hover .page-footer__logo-icon {
+    fill: $color-hover;
+  }
+  .page-footer__logo[href]:active .page-footer__logo-icon {
+    fill: $color-hover;
+    opacity: 0.3;
   }
   .page-footer__social {
     border: none;
@@ -81,16 +105,17 @@
   }
   .page-footer__copyright {
     align-items: center;
-    margin-left: auto;
+    margin-left: 78px;
   }
   .page-footer__copyright-title {
+    display: block;
     margin: 0;
     margin-top: 4px;
-    margin-right: 30px;
   }
   .page-footer__copyright-link {
     margin: 0;
     padding: 0;
+    margin-left: 22px;
   }
 }
 @media (min-width: $desktop-width) {
@@ -98,7 +123,7 @@
     margin-top: 0;
   }
   .page-footer__logo {
-    margin-right: 357px;
+    margin-right: 349px;
   }
   .page-footer__social-wrapper {
     margin-top: 0px;
@@ -107,6 +132,7 @@
   }
   .page-footer__copyright {
     margin-top: 0px;
+    margin-left: auto;
   }
   .page-footer__copyright-title {
     margin-top: 0px;

@@ -1,5 +1,17 @@
 .reviews {
+  position: relative;
   padding-bottom: 86px;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 36px;
+    width: 100%;
+    height: 7px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position-x: 8px;
+  }
 }
 .reviews-wrapper {
   display: flex;
@@ -55,16 +67,17 @@
   height: 50px;
   font-size: 0px;
   border: 1px solid $border-color;
-  background-color: $bg-color;
-  background-repeat: no-repeat;
+}
+.reviews__pages-item-icon {
+  fill: $text-color;
+  margin-top: 12px;
+  margin-left: 39px;
   &:hover {
+    opacity: 0.6;
   }
   &:active {
+    opacity: 0.3;
   }
-}
-.reviews__pages-item--prev {
-  background-image: url("../img/icon-left-arrow.svg");
-  background-position: 50% center;
 }
 .reviews__pages-item--next {
   margin-left: -1px;
@@ -73,12 +86,21 @@
 }
 @media(min-width:$tablet-width) {
   .reviews {
+    position: relative;
     margin-bottom: 146px;
     padding-bottom: 0;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: auto 100%;
+    background-size: 47% 100%;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
+    &::after {
+      bottom: -85px;
+      height: 17px;
+      background-position-x: 29px;
+    }
   }
   .reviews-wrapper {
     position: relative;
@@ -115,7 +137,7 @@
   .reviews__pages {
     position: absolute;
     margin:0;
-    right: 0px;
+    right: 27px;
     bottom: 50px;
     width: 167px;
   }
@@ -135,11 +157,30 @@
   .reviews {
     margin-bottom: 162px;
     background:none;
+    &::after {
+      display: none
+    }
   }
   .reviews-wrapper {
+    position: relative;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
+    background-size: contain;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -94px;
+      width: 100%;
+      height: 23px;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+      background-position-x: 29px;
+    }
   }
   .reviews__title {
     margin-left: 175px;
@@ -160,6 +201,6 @@
   }
   .reviews__pages {
     bottom: 99px;
-    right: 0;
+    right: 27px;
   }
 }

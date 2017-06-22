@@ -41,7 +41,7 @@
   color: $color-third;
   background-image: linear-gradient(to left, #62d1ba, #62d1ba);
   background-position: 0 100%;
-  background-size: 10px 1px;
+  background-size: 10px 2px;
   background-repeat: repeat-x;
   &:hover {
     color: #46c1ae;
@@ -118,8 +118,8 @@
   .contacts__title {
     padding-right: 50px;
     margin-top: 69px;
-    margin-left: 175px;
-    margin-bottom: 48px;
+    margin-left: 168px;
+    margin-bottom: 52px;
     position: relative;
     font-size: 53px;
     line-height: 57px;
@@ -137,7 +137,7 @@
   .contacts__information {
     display: table;
     width: 301px;
-    margin-left: 175px;
+    margin-left: 174px;
     margin-bottom: 77px;
   }
   .contacts__information tbody {

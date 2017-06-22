@@ -1,11 +1,20 @@
 .special-offer {
+  position: relative;
   padding-bottom: 42px;
   margin-bottom: 28px;
   background-color: $bg-color;
   color: $text-color;
-  background-image: url("../img/zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: bottom;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    width: 100%;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position-x: 8px;
+  }
 }
 .special-offer__header {
   margin-bottom: 23px;
@@ -69,6 +78,7 @@
 .special-offer__img img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 .special-offer__buy {
   display: flex;
@@ -85,7 +95,12 @@
 @media(min-width:$tablet-width) {
   .special-offer {
     padding-bottom: 40px;
-    margin-bottom: 75px;
+    margin-bottom: 77px;
+    &::after {
+      bottom: -30px;
+      height: 17px;
+      background-position-x: 20px;
+    }
   }
   .special-offer__header {
     display: flex;
@@ -164,9 +179,23 @@
   .special-offer {
     padding-bottom: 69px;
     margin-bottom: 86px;
+    &::after {
+      display: none;
+    }
   }
   .special-offer__inner {
     position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -94px;
+      width: 100%;
+      height: 23px;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+      background-position-x: 29px;
+    }
   }
   .special-offer__header {
     position: relative;
@@ -212,5 +241,8 @@
   .special-offer__img img {
     width: 525px;
     height: 635px;
+  }
+  .special-offer__buy {
+    width: 294px;
   }
 }

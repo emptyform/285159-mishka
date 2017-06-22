@@ -68,9 +68,11 @@
     border-color: transparent;
   }
   .main-nav__list {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     order: 0;
+    z-index: 10;
   }
   .main-nav__item {
     width: 167px;
@@ -103,11 +105,13 @@
     }
   }
   .main-nav__hidden-link {
+    position: relative;
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
     text-decoration: none;
     color: $text-color;
+    z-index: 10;
     &--delivery {
       display: block;
       padding-top: 20px;
@@ -169,6 +173,12 @@
     font-weight: 700;
     &--delivery {
       font-weight: 400;
+    }
+    &[href]:hover {
+      opacity: 0.6;
+    }
+    &[href]:active {
+      opacity: 0.3;
     }
   }
 }
