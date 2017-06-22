@@ -73,7 +73,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html", ["html:update"]); 
+  gulp.watch("*.html", ["html:update"]);
 });
 
 gulp.task("copy", function() {
@@ -89,7 +89,7 @@ gulp.task("copy", function() {
 });
 
 gulp.task("clean", function() {
-  return del("build"); 
+  return del("build");
 });
 
 gulp.task("build", function(fn) {
