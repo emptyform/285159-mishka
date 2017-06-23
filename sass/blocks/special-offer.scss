@@ -180,15 +180,9 @@
     padding-bottom: 69px;
     margin-bottom: 86px;
     &::after {
-      display: none;
-    }
-  }
-  .special-offer__inner {
-    position: relative;
-    &::after {
       position: absolute;
       content: "";
-      bottom: -94px;
+      bottom: -25px;
       width: 100%;
       height: 23px;
       background-image: url("../../img/bg-zigzag-line.svg");
@@ -196,6 +190,9 @@
       background-size: contain;
       background-position-x: 29px;
     }
+  }
+  .special-offer__inner {
+    position: relative;
   }
   .special-offer__header {
     position: relative;
