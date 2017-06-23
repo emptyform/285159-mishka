@@ -44,9 +44,15 @@
   line-height: 24px;
   font-weight: 700;
 }
-.catalog__item-link {
+.catalog__item-link-name {
   text-decoration: none;
   color: $text-color;
+  &:hover {
+    color: rgba($text-color, 0.6);
+  }
+  &:active {
+    color: rgba($text-color, 0.3);
+  }
 }
 .catalog__item-description {
   font-size: 13px;
@@ -68,6 +74,17 @@
 }
 .catalog__item-to-oder {
   margin-top: 22px;
+}
+.catalog__item-to-oder-icon {
+  opacity: 0.2;
+}
+.catalog__item-to-oder:hover .catalog__item-to-oder-icon {
+  fill: $color-icon;
+  opacity: 1;
+}
+.catalog__item-to-oder:active .catalog__item-to-oder-icon {
+  fill: $color-icon;
+  opacity: 0.3;
 }
 @media(min-width:$tablet-width) {
   .catalog {

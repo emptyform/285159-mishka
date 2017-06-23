@@ -35,7 +35,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-.page-footer__copyright-title {
+.page-footer__copyright-link {
   margin: 0;
   padding: 0;
   margin-top: 20px;
@@ -48,7 +48,7 @@
   color: $text-color;
   text-decoration: none;
 }
-.page-footer__copyright-link {
+.page-footer__copyright-text {
   display: inline-block;
   vertical-align: middle;
   width: 27px;
@@ -60,13 +60,13 @@
 .page-footer__academy-icon {
   fill: $color-icon;
 }
-.page-footer__copyright-title:hover .page-footer__academy-icon {
+.page-footer__copyright-link:hover .page-footer__academy-icon {
   fill: $color-icon-hover;
 }
-.page-footer__copyright-title:active {
+.page-footer__copyright-link:active {
   opacity: 0.3;
 }
-.page-footer__copyright-title:active .page-footer__academy-icon{
+.page-footer__copyright-link:active .page-footer__academy-icon{
   fill: $color-icon-hover;
 }
 @media (min-width: $tablet-width) {
@@ -107,12 +107,12 @@
     align-items: center;
     margin-left: 78px;
   }
-  .page-footer__copyright-title {
+  .page-footer__copyright-link {
     display: block;
     margin: 0;
     margin-top: 4px;
   }
-  .page-footer__copyright-link {
+  .page-footer__copyright-text {
     margin: 0;
     padding: 0;
     margin-left: 22px;
@@ -134,7 +134,7 @@
     margin-top: 0px;
     margin-left: auto;
   }
-  .page-footer__copyright-title {
+  .page-footer__copyright-link {
     margin-top: 0px;
   }
 }
