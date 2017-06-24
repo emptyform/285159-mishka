@@ -52,7 +52,6 @@
 }
 .goods__item-inner--interior {
   position: relative;
-  
   &:before {
     position: absolute;
     content: "";
@@ -62,6 +61,7 @@
     right: 33px;
     background-image: url("../img/icon-interior.svg");
     background-repeat: no-repeat;
+    opacity: 0.5;
   }
 }
 .goods__item-inner--toys {
@@ -75,7 +75,22 @@
     right: 23px;
     background-image: url("../img/icon-toy.svg");
     background-repeat: no-repeat;
+    opacity: 0.5;
   }
+}
+.goods__item:hover {
+  margin-top: -5px; 
+}
+.goods__item:hover .goods__item-inner--interior::before,
+.goods__item:hover .goods__item-inner--toys::before{
+  opacity: 0.7;
+}
+.goods__item:active .goods__item-name {
+  opacity: 0.3;
+}
+.goods__item:active .goods__item-inner--interior::before,
+.goods__item:active .goods__item-inner--toys::before{
+  opacity: 0.3;
 }
 .goods__item-name {
     display: block;
