@@ -81,6 +81,9 @@
 .goods__item:hover {
   margin-top: -5px;
 }
+.goods__item:hover .goods__item-inner{
+  padding-bottom: 34px;
+}
 .goods__item:hover .goods__item-inner--interior::before,
 .goods__item:hover .goods__item-inner--toys::before{
   opacity: 0.7;
