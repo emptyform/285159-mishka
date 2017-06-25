@@ -1,6 +1,6 @@
 .catalog__header {
   background-color: $bg-color-second;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 .catalog__title {
   margin: 0 auto;
@@ -12,7 +12,7 @@
   font-weight: 700;
 }
 .catalog__item {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 .catalog__item:last-of-type {
   margin-bottom: 31px;
@@ -39,7 +39,7 @@
   margin: 0;
   padding: 0;
   margin-top: 26px;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -63,10 +63,10 @@
 .catalog__item-buy {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
 }
 .catalog__item-price {
-  margin-top: 22px;
+  margin-top: 21px;
   color: $text-color;
   font-size: 15px;
   line-height: 24px;
@@ -93,7 +93,7 @@
   }
   .catalog__header {
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 81px;
     &::after {
       position: absolute;
       content: "";
@@ -117,7 +117,7 @@
     margin-bottom: 54px;
   }
   .catalog__item {
-    margin-bottom: 53px;
+    margin-bottom: 54px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -141,17 +141,17 @@
   .catalog__item-inner {
     margin-left: 24px;
     margin-right: 32px;
-    padding-bottom: 170px;
+    padding-bottom: 175px;
     border-bottom: none;
     &--basket {
-      padding-bottom: 148px;
+      padding-bottom: 151px;
     }
   }
   .catalog__item-name {
     font-size: 20px;
     line-height: 24px;
     margin-top: 26px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     padding-right: 35px;
 }
   .catalog__item-description {
