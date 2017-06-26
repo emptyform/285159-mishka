@@ -1,10 +1,10 @@
 .reviews {
   position: relative;
-  padding-bottom: 86px;
+  padding-bottom: 87px;
   &::after {
     position: absolute;
     content: "";
-    bottom: 36px;
+    bottom: 35px;
     width: 100%;
     height: 7px;
     background-image: url("../../img/bg-zigzag-line.svg");
@@ -21,7 +21,7 @@
 .reviews__title {
   padding: 0;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -37,13 +37,13 @@
 .reviews__text {
   margin: 0px;
   padding: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
 }
 .reviews__author {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -87,19 +87,19 @@
 @media(min-width:$tablet-width) {
   .reviews {
     position: relative;
-    margin-bottom: 146px;
+    margin-bottom: 148px;
     padding-bottom: 0;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: 47% 100%;
+    background-size: 46% 100%;
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/review@2x.jpg");
     }
     &::after {
-      bottom: -85px;
+      bottom: -89px;
       height: 17px;
-      background-position-x: 29px;
+      background-position-x: 20px;
     }
   }
   .reviews-wrapper {
@@ -137,8 +137,8 @@
   .reviews__pages {
     position: absolute;
     margin:0;
-    right: 27px;
-    bottom: 50px;
+    right: 29px;
+    bottom: 48px;
     width: 167px;
   }
   .reviews__pages-item {
@@ -155,18 +155,18 @@
 }
 @media(min-width:$desktop-width) {
   .reviews {
-    margin-bottom: 162px;
+    margin-bottom: 165px;
     background:none;
     &::after {
       position: absolute;
       content: "";
-      bottom: -94px;
+      bottom: -93px;
       width: 100%;
-      height: 23px;
+      height: 22px;
       background-image: url("../../img/bg-zigzag-line.svg");
       background-repeat: repeat-x;
       background-size: contain;
-      background-position-x: 29px;
+      background-position-x: -7px;
     }
   }
   .reviews-wrapper {
@@ -181,7 +181,7 @@
   }
   .reviews__title {
     margin-left: 175px;
-    margin-top: 69px;
+    margin-top: 70px;
     margin-bottom: 50px;
     font-size: 53px;
     line-height: 57px;
@@ -193,11 +193,14 @@
   .reviews__text {
     margin-bottom: 37px;
   }
+  .reviews__author {
+    font-size: 17px;
+  }
   .reviews__author-email {
     margin-bottom: 93px;
   }
   .reviews__pages {
-    bottom: 99px;
-    right: 27px;
+    bottom: 96px;
+    right: 29px;
   }
 }

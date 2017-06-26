@@ -45,12 +45,15 @@
     flex-direction: row;
     align-items: center;
     margin: 0;
-    margin-left: 34px;
+    margin-left: 32px;
     margin-top: 31px;
   }
   .shopping-cart__link-icon {
     margin-right: 31px;
   }
+  .shopping-cart__indicator {
+    padding-left: 4px;
+}
 }
 @media(min-width:$desktop-width) {
   .shopping-cart__link {
